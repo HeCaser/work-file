@@ -1,4 +1,9 @@
 [课程源码](https://codesandbox.io/s/6n20nrzlxz?file=/src/)
+# 课程源代码地址：
+- Demo： https://6n20nrzlxz.codesandbox.io
+- 源代码： https://codesandbox.io/s/6n20nrzlxz
+- Gitee 仓库： https://gitee.com/geektime-geekbang/react-geek-time
+
 
 # 第三讲以组件方式考虑 UI 构建
 

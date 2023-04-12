@@ -80,4 +80,71 @@ Middleware
 - 三方工具: immer
 ---
 
-# 17 讲 
+# 17 讲 React Router（1）：路由不只是页面切换，更是代码组织方式
+
+## 为什么需要路由
+- 单页应用需要页面切换
+- 通过 URL 可以定位到页面
+- 更有语义的组织自选
+
+## React Router 的特性
+- 声明式路由定义
+- 动态路由
+
+## 实现方式
+- URL 路径:  www.****/home/page1. 
+- hash 路由: 低版本浏览器不支持 url 改变后不刷新, 利用 www.****/home/#/page1
+- 内存路由
+
+---
+
+# 18 讲 React Router（2）：参数定义，嵌套路由的使用场景
+
+## 如何传递,获取参数
+- URL 后面拼接: /topic:id . id 是传递的参数
+- 获取参数: match.params.id
+  
+## 何时需要 URL 参数
+- 页面状态尽量通过 URL 参数定义
+
+---
+
+# 19 讲  UI 组件库对比和介绍：Ant.Design、Material UI、Semantic UI
+
+- Ant.Design： https://ant.design/index-cn
+- Material UI： https://material-ui.com/
+- Semantic UI： https://react.semantic-ui.com/
+
+> 老师总结: Ant 各方面比较全面, 优先推荐
+---
+
+# 20 讲 使用 Next.js 创建 React 同构应用
+> 服务端渲染,服务端的状态能够传到前端
+
+<img width =500 src='./2001.png'>
+
+Next.js： https://nextjs.org/
+
+## 页面创建
+- 页面就是 pages 目录下的一个组件
+- static 目录映射静态文件
+- page 具有特殊静态方法 getInitialProps
+
+## 在页面中使用其他 React 组件
+- 页面也是标准 node 模块, 可以使用其他 React 组件
+- 页面会针对性打包, 仅包含其引入的组件
+
+---
+
+# 21 讲 使用Jest、Enzyme等工具进行单元测试
+> 介绍 React 单元测试相关工具
+  
+- Jest： https://jestjs.io/
+- Enzyme： http://airbnb.io/enzyme/
+
+---
+# 22 讲 常用开发调试工具：ESLint、Prettier、React DevTool、Redux DevTool
+- ESLint： https://eslint.org/
+- Prettier： https://prettier.io/
+- React DevTool： https://github.com/facebook/react-devtools
+- Redux DevTool： https://github.com/reduxjs/redux-devtools
