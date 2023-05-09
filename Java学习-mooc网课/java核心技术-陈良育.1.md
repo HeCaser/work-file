@@ -1,7 +1,5 @@
 ## 
 
-
-
     /**
      * 抽象类
      * 子类要实现所有抽象方法 否则自身还得保持抽象类
@@ -29,7 +27,7 @@
 ---
 ### 单例模式
 
-    设计模式: 在软件开发中,经过验证的,用于处理特定环境下,重复出现的,特定的问题的解决方案.
+    设计模式: 在软件开发中,经过验证的,用于处理特定环境下,重复出现的,特定的问题的解决方案.
     分类: 创建型,结构型,行为型.
 
 
@@ -40,7 +38,7 @@
 
 ### final 关键字
     类: 不能被继承
-    变量: 不能再次赋值, 基本类型:不能修改具体值. 引用类型:不能修改指针(但是可以修改对象内部值)
+    变量: 不能再次赋值, 基本类型:不能修改具体值. 引用类型:不能修改指针(但是可以修改对象内部值)
     方法:不能改写(重写)
 ---
 ### 常量设计和常量池
@@ -50,12 +48,12 @@
 
     eg: public static final double PI = 3.141592653
 
-    接口里面的变量默认常量: 缺省 public static final 修饰
+    接口里面的变量默认常量: 缺省 public static final 修饰
 
-    常量池: java 为很多基本类型的包装类/字符串都配置了常量池
+    常量池: java 为很多基本类型的包装类/字符串都配置了常量池
 
     基本类型常量池:
-    Boolean: true false
+    Boolean: true false
     Byte,Character 0 ~ 127
     Short,Integer, Long -128 ~ 127
     Float,Double 没有常量池
@@ -65,7 +63,7 @@
 
     注意: 常量化是建立在赋值创建基础上, eg Integer b = 19 ,会保存在栈内存里.
           new 对象创建 Integer c = new Integer(19) 是不会被常量化的,会放在堆内存中.
-            此时 b==c 为 false. 但是 如果定义 int a = 19 由于拆箱操作 a==b 为true 
+            此时 b==c 为 false. 但是 如果定义 int a = 19 由于拆箱操作 a==b 为true 
             a==c 为ture
 
 ```java
@@ -87,7 +85,7 @@
 
 ---
 ### 不可变对象和字符串
- immutable对象是不可变的, 有改变,请clone/new一个对象进行修改
+ immutable对象是不可变的, 有改变,请clone/new一个对象进行修改
 
  所有属性都是 final private
  不提供 set
@@ -95,7 +93,7 @@
  如果类包含 mutable 类型, clone时需要深度克隆.
 
  String 类是一个典型的不可变对象
- 字符串内容比较: equals 
+ 字符串内容比较: equals 
  字符串内存比较: ==
 
  如果要大量字符串加法操作,如果用String, 会不断创建新的内存对象. 请使用 StringBuffer 或者 StringBuilder 来提高效率.
@@ -135,11 +133,11 @@ Java 数字类
 浮点数 Float Double
 大数 BigInteger BigDecimal
 随机数 Random
-工具类 Math
+工具类 Math
 
 Java 字符串相关类
 String 是一个不可变对象,加减操作性能差
-常用方法 chatAt indexOf concat contains endsWith equals length trim
+常用方法 chatAt indexOf concat contains endsWith equals length trim
         replace replaceAll
 StringBuffer(字符串加减,同步,性能较String高很多)
 StringBuilder(字符串加减,不同步,性能较StringBuffer高)
@@ -148,7 +146,7 @@ Java 时间类
 java.util.Date(基本废弃)
 java.sql.Date 和数据库对应时间类
 Calendar 目前常用类,但是是抽象类
- Calendar gc = Calendar.getInstance(); 会返回一个子类 GregorianCalendar()
+ Calendar gc = Calendar.getInstance(); 会返回一个子类 GregorianCalendar()
  
 1.8后更新了一个 time 包, 设计的更安全,封装更好,并且可扩展.
 
@@ -161,7 +159,7 @@ DateFormat: 日期格式化 抽象类
 ---
 ### Java 异常和异常处理
 异常:程序不正常的行为或者状态
-异常处理: 程序能够返回到安全状态,允许用户保存结果,并以适当方式关闭程序.
+异常处理: 程序能够返回到安全状态,允许用户保存结果,并以适当方式关闭程序.
 
 Throwable分为两种: Error:系统内部错误,资源耗尽. Exception:程序相关异常,重点关注
 
@@ -176,9 +174,9 @@ try 必须有 catch finally 至少有一个  catch可以有多个
 方法存在可能异常,但不处理,可以使用throws来声明,别人调用的时候可以自行处理,或者继续上抛.
 
 ---
-### 自定义异常
-继承 Exception 就变成 CheckedException 编译器会检查
-继承 RuntimeException 就变成 Unchecked Exception 编译时编译器不会辅助检查,需程序员自己注意
+### 自定义异常
+继承 Exception 就变成 CheckedException 编译器会检查
+继承 RuntimeException 就变成 Unchecked Exception 编译时编译器不会辅助检查,需程序员自己注意
 
 
 ---
@@ -194,7 +192,7 @@ try 必须有 catch finally 至少有一个  catch可以有多个
 1. 数组length标记数组长度
 2. 0 ~ length-1 超出范围报错
    
-多维数组: 规则数组 int a[][] = new int[2][3] 代表2行3列
+多维数组: 规则数组 int a[][] = new int[2][3] 代表2行3列
 不规则数组
 
 ```java
@@ -220,7 +218,7 @@ Java1.2后 提出JCF集合框架
 映射 Map
 
 算法类
-Arrays Collections
+Arrays Collections
 
 ---
 ### 列表List
@@ -229,7 +227,7 @@ Arrays Collections
    
 List 实现
 1. ArrayList 非同步的,以数组实现的列表,不支持同步.与数组相比是大小可以动态扩充.适合变动不大,增删少的情况.
-2. LinkedList 非同步的,以双向链表实现的列表,可以当做堆栈,队列等.增删都比较高效.
+2. LinkedList 非同步的,以双向链表实现的列表,可以当做堆栈,队列等.增删都比较高效.
 3. Vector 同步的
 
 ---
@@ -246,16 +244,16 @@ Set 实现
    
 HashSet 和 LinkedHashSet 判断元素是否重复的原则,其实就是HashMap判断原则
 > 首先判断 hashCode 返回值是否相同,若不同,直接返回 false. 否则进行下一步
-> 下一步调用 equals 返回 false 或者 true . 
+> 下一步调用 equals 返回 false 或者 true . 
 >  hashCode 和 equals 是所有类都有的方法,因为Object有.
 
-TreeSet 判断元素重复原则
+TreeSet 判断元素重复原则
 需要元素继承 Comparable 接口
 比较两个元素的 compareTo 方法
 
 --- 
 ### 映射 Map
-数学定义: 两个集合之间的元素对应关系,一个输入对应一个输出
+数学定义: 两个集合之间的元素对应关系,一个输入对应一个输出
 
 Java 中的 Map
 Hashtable 同步,慢,数据量小 K V 均不能为 null
@@ -269,11 +267,11 @@ TreeMap 基于红黑树的Map 可以根据 key 的自然排序或者 CompareTo �
 不存储数据,只是在数据结构上做高效操作
 
 Arrays: 处理对象为数组
-1. 排序: 对数组排序 sort/parallelSort
-2. 查找: 从数组查找 binarysearch
+1. 排序: 对数组排序 sort/parallelSort
+2. 查找: 从数组查找 binarysearch
 3. 批量拷贝: copyOf
 4. 批量赋值: fill
-5. 等价比较: 判断两个数组中内容是否相同 equals
+5. 等价比较: 判断两个数组中内容是否相同 equals
 
 Collections: 处理对象为 List Set Map 功能和使用与 Arrays 类似
 
@@ -286,10 +284,10 @@ Collections: 处理对象为 List Set Map 功能和使用与 Arrays 类似
 java.io.File是文件和目录的重要类
 File 类与 OS 无关,但是受到OS的权限限制.File 类不涉及到文件内容,值涉及属性
 
-Java 7 提出了 NIO 包,是对 File 包的补充,例如文件复制和移动,递归遍历和删除等.
+Java 7 提出了 NIO 包,是对 File 包的补充,例如文件复制和移动,递归遍历和删除等.
 
 Java io 包概述
 Java 读写文件,只能以数据流的形式进行读写
 -节点类 直接对文件读写
--包装类 转化类和装饰类
+-包装类 转化类和装饰类
 
