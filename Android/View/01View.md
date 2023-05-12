@@ -20,4 +20,11 @@
     binding.llContainer.addView(tv)
     binding.llContainer.addView(tv2)
 ```
+---
 
+# onDraw() 不触发
+一些 ViewGroup 默认不回调 `onDraw()`, 可以通过 `setWillNotDraw(false)` 来解决
+
+---
+
+# 
