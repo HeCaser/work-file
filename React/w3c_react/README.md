@@ -2,7 +2,9 @@
 
 > 注意不是 React Native
 
-https://www.w3schools.com/react/default.asp
+[W3c School](https://www.w3schools.com/react/default.asp)
+
+[github 项目地址](git@github.com:HeCaser/RNIntegration.git)
 
 2023-04-28
 # React Tutorial
