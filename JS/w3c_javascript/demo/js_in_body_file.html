@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <h2>Demo JavaScript in Body</h2>
+
+  <p id="demo">A Paragraph</p>
+  <button type="button" onclick="myFunction()">Try it</button>
+
+  <button type="button" onclick="myFunction2()">Try it2</button>
+
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed in body.";
+    }
+  </script>
+
+  <!-- 外部引入,若有同名方法,后面的会覆盖前面的 -->
+  <script src="js_func.js"></script>
+</body>
+
+</html>
