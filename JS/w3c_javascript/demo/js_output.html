@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h2>Demo JavaScript OutPut</h2>
+
+    <p id="demo">A Paragraph</p>
+
+    <button type="button" onclick="myFunction()">Try innerHTML</button>
+
+    <button type="button" onclick="tryWrite()">Try write file</button>
+
+    <button type="button" onclick="tryAlert()">Try alert</button>
+
+    <button type="button" onclick="tryConsole()">Try tryConsole</button>
+
+    <script>
+        document.write(6 + 5)
+    </script>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "JS innerHTML.";
+        }
+    </script>
+
+    <script>
+        function tryWrite() {
+            document.write('渲染结束后调用 write, 会删除所有view')
+        }
+    </script>
+
+    <script>
+        function tryAlert() {
+            window.alert('I am alert')
+        }
+    </script>
+
+  <script>
+        function tryConsole() {
+            console.log('hepan ----')
+        }
+    </script>
+
+</body>
+
+</html>
