@@ -1,3 +1,3 @@
 function myFunction2() {
-    document.getElementById("demo").innerHTML = "Paragraph changed in External File.";
+    document.getElementById("demo").innerHTML = "JS in External File.";
   }
