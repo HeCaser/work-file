@@ -14,11 +14,15 @@
     - 在 body 中
     - 在外部文件中
 
-[输出,声明,语法](01JS.md)
+[输出,关键字,语法语句,编写规则](01JS.md)
 
 - JS 展示数据的四种方式
   - innerHTML
   - document.write()
   - widow.alert()
   - console.log()
+
+- JS 语法语句
+  - 包含: Values, Operators, Expressions, Keywords, and Comments.
+  - **关键字**: var let const if switch for try ...
 
