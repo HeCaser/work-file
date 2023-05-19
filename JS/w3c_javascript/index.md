@@ -5,7 +5,6 @@
 - [W3C School](https://www.w3schools.com/js/default.asp)
 
 
-
 [JS 基础](00JS.md)
 
 - JS 基础概念
@@ -25,4 +24,6 @@
 - JS 语法语句
   - 包含: Values, Operators, Expressions, Keywords, and Comments.
   - **关键字**: var let const if switch for try ...
+  - 常量,变量,操作符,命名规则
+  - 大小写敏感
 
