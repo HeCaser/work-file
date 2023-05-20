@@ -15,7 +15,6 @@
 
   ---
 
-
   # 长久不连接 github 导致 SSH 连接权限失效
 
  <img src='03connect-error.png' width='500'>
@@ -25,4 +24,3 @@
   选择的删除 `/Users/pan.he/.ssh/known_hosts` ，后重新连接即可
 
 
-  
