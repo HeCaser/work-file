@@ -15,12 +15,12 @@
 
   ---
 
-  # 长久不连接 github 导致 SSH 连接权限失效
+  # github 连接报错
 
  <img src='03connect-error.png' width='500'>
 
   [解决办法](https://stackoverflow.com/questions/20840012/ssh-remote-host-identification-has-changed/44293270#44293270)
 
-  选择的删除 `/Users/pan.he/.ssh/known_hosts` ，后重新连接即可
+  办法1： 删除 `/Users/pan.he/.ssh/known_hosts` ，后重新连接即可
 
 

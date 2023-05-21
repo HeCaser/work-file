@@ -26,7 +26,8 @@ alias.cp=cherry-pick
   
 ---
 
+# git set
 
-
-
+> 设置邮箱为例：
+`git config --global user.email "MY_NAME@example.com"`
 
