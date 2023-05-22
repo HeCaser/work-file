@@ -1,6 +1,6 @@
 #  记录 git 相关知识点
 
-[git 常用方法](git_q.md)
+[git 常用方法](git_function.md)
  
  - git alias
 
