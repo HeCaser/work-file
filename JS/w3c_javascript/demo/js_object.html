@@ -1,0 +1,24 @@
+<html>
+
+<body>
+    <button onclick="printName()">alert name</button>
+    <button onclick="printInfo()">alert info</button>
+</body>
+<script>
+    const Person = {
+        name: "hepan",
+        sex: "male",
+        // Method
+        info: function () {
+            return `${this.name} is ${this.sex}`
+        }
+    }
+    function printName() {
+        alert(Person.name)
+    }
+    function printInfo() {
+        alert(Person.info())
+    }
+</script>
+
+</html>
