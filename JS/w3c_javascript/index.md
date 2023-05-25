@@ -41,3 +41,4 @@
 
   - 数据类型 Data Types: 简介, 更详细的介绍在后续章节
 
+[Function, ](04JS.md)
