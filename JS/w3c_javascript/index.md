@@ -38,3 +38,5 @@
   - 逻辑运算符 && || !
   - type 运算: typeof  instanceof
   - 位运算: & | ~ << 等
+
+  - 数据类型 Data Types: 简介, 更详细的介绍在后续章节
