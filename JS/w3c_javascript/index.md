@@ -42,3 +42,5 @@
   - 数据类型 Data Types: 简介, 更详细的介绍在后续章节
 
 [Function, Object, Events ](04JS.md)
+
+[Strings, String Methods](05JS.md)

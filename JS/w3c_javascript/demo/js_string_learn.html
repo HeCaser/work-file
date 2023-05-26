@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+</head>
+
+<body>
+
+    <button onclick="alertLength('i am ')">字符串 length</button>
+
+    <p id="demo">----</p>
+
+    <button onclick="showTest()">展示转义字符串</button>
+    <br>
+    <button onclick="showBackspace()">展示\b</button>
+    <br>
+    <button onclick="showF()">展示\f</button>
+    <br>
+    <button onclick="showN()">展示\n</button>
+
+    <br>
+    <button onclick="showT()">展示\t</button>
+    <br>
+    <button onclick="showR()">展示\r</button>
+    <br>
+    <button onclick="showLong()">展示长文案</button>
+
+    <script>
+        function alertLength(content) {
+            alert(content.length)
+        }
+
+        function showTest() {
+            document.getElementById("demo").innerHTML = "展示转义字符 \\ \" \\\\ "
+        }
+
+        function showBackspace() {
+            document.getElementById("demo").innerHTML = "b开头\b\b\b结尾"
+        }
+        function showF() {
+            document.getElementById("demo").innerHTML = "F开头\f\f\f\f\f\f结尾"
+        }
+
+        function showN() {
+            document.getElementById("demo").innerHTML = "n开头\n\n\n结尾"
+        }
+        function showT() {
+            document.getElementById("demo").innerHTML = "t开头\t\t\t\t\t\t结尾"
+        }
+        function showR() {
+            document.getElementById("demo").innerHTML = "r开头\t\t\t结尾"
+        }
+
+        function showLong() {
+            let content ="我是长文案\
+            为了方便阅读\
+            在代码中是换行的\
+            希望浏览器支持"
+            document.getElementById("demo").innerHTML = content
+        }
+    </script>
+
+</body>
+
+</html>
