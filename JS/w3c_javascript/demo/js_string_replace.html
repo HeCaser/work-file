@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <button onclick="fun1()">replace first</button>
+    <br>
+    <button onclick="fun2()">test 大小写</button>
+    <br>
+    <button onclick="fun3()">test /i 大小写</button>
+    <br>
+    <button onclick="fun4()">test /g 全部替换</button>
+    <br>
+</body>
+<script>
+
+    function fun1() {
+        let text = "Please visit Microsoft and Microsoft!";
+        // 默认只替换第一个
+        let newText = text.replace("Microsoft", "W3Schools");
+        console.log(newText)
+    }
+    function fun2() {
+        let text = "Please visit Microsoft!";
+        // 区分大小写: Please visit Microsoft!
+        let newText = text.replace("MICROSOFT", "W3Schools");
+        console.log(newText)
+    }
+
+    function fun3() {
+        let text = "Please visit Microsoft!";
+        // /i 不区分大小写: Please visit W3Schools!
+        let newText = text.replace(/MICROSOFT/i, "W3Schools");
+        console.log(newText)
+    }
+
+    function fun4() {
+        let text = "Please visit Microsoft and Microsoft!";
+        // /g 全部替换
+        let newText = text.replace(/Microsoft/g, "W3Schools");
+        console.log(newText)
+    }
+</script>
+
+</html>
