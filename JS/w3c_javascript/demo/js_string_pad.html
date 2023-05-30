@@ -15,6 +15,8 @@
     <br>
     <button onclick="fun4()">padStart</button>
     <br>
+    <button onclick="fun5()">charAt</button>
+    <br>
 </body>
 <script>
 
@@ -39,6 +41,15 @@
         let text = "1234";
         let newText = text.padStart(6,"987");
         console.log(newText)
+    } 
+    
+    function fun5() {
+        let text = "a";
+        console.log('charAt '+ text.charAt(0) +'  charCodeAt '+text.charCodeAt(0))
+        console.log('[0] = '+ text[0])
+
+        let a ='we are family'
+        console.log("hepan")
     }
 </script>
 </html>
