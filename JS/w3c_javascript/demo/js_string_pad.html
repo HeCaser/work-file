@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun1()">padStart</button>
+    <br>
+    <button onclick="fun2()">padStart</button>
+    <br>
+    <button onclick="fun3()">padStart</button>
+    <br>
+    <button onclick="fun4()">padStart</button>
+    <br>
+</body>
+<script>
+
+    function fun1() {
+        let text = "1";
+        let newText = text.padStart(4,"0");
+        console.log(newText)
+    }
+    function fun2() {
+        let text = "0";
+        let newText = text.padStart(4,"0");
+        console.log(newText)
+    }
+
+    function fun3() {
+        let text = "12345";
+        let newText = text.padStart(4,"0");
+        console.log(newText)
+    }
+
+    function fun4() {
+        let text = "1234";
+        let newText = text.padStart(6,"987");
+        console.log(newText)
+    }
+</script>
+</html>
