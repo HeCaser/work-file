@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fun1()">浮点计算-不准确</button>
+    <br>
+    <button onclick="fun2()">浮点计算-先乘后除</button>
+    <br>
+    <button onclick="fun3()">+ 的使用</button>
+    <br>
+    <button onclick="fun4()">string number</button>
+    <br>
+    <button onclick="fun5()">Infinity</button>
+    <br>
+    <button onclick="fun6()">进制</button>
+
+
+</body>
+<script>
+
+    function fun1() {
+        alert(` 0.1 + 0.2 = ${0.1 + 0.2}`)
+    }
+    function fun2() {
+        alert(` 0.1 + 0.2 = ${(0.1 * 10 + 0.2 * 10) / 10}`)
+    }
+
+    function fun3() {
+        let text = ` 10 + 20 = ${10 + 20}`
+        let text2 = ` "10" + "20" = ${"10" + "20"}`
+        let text3 = ` 10 + "20" = ${10 + "20"}`
+        let text4 = ` "10" + 20 = ${"10" + 20}`
+        let text5 = ` "result " + 10 + 20 = ${"result" + 10 + 20}`
+        let text6 = `  10 + 20 + "result " = ${10 + 20 + "result"}`
+        alert(`${text}\n ${text2} \n ${text3} \n ${text4} \n ${text5} \n ${text6}`)
+        console.log(`${text}\n ${text2} \n ${text3} \n ${text4} \n ${text5} \n ${text6}`)
+    }
+
+    function fun4() {
+        let text = `"10" * "20" = ${"10" * "20"}`
+        let text2 = `"10" - "20" = ${"10" - "20"}`
+        let text3 = `"10" / "20" = ${"10" / "20"}`
+        let text4 = `"10" * "%" = ${"10" * "%"}`
+
+        alert(`${text}\n ${text2} \n ${text3} \n ${text4} `)
+        console.log(`${text}\n ${text2} \n ${text3} \n ${text4} `)
+    }
+
+    function fun5() {
+        let text = ` 10/ 0 =  ${10 / 0}`
+        alert(text)
+    }
+
+    function fun6() {
+        let myNumber = 32
+        let text = ` 32 转换 32 进制 = ${myNumber.toString(32)}`
+        let text2 = ` 32 转换 8 进制 = ${myNumber.toString(8)}`
+        let text3 = ` 32 转换 2 进制 = ${myNumber.toString(2)}`
+        let text4 = ` 0xff = ${0xff}`
+        alert(`${text}\n ${text2} \n ${text3} \n ${text4}`)
+    }
+
+</script>
+
+</html>
