@@ -44,3 +44,11 @@
 [Function, Object, Events ](04JS.md)
 
 [Strings, String Methods](05JS.md)
+  - trim
+  - padString
+  - replace
+  - charAt
+  - split 
+  - ...
+
+  
