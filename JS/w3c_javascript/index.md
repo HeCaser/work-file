@@ -51,7 +51,9 @@
   - split 
   - ...
 
-[String Search](06JS.md)
+[String Search, 模板字符串](06JS.md)
 
   - 字符串检索相关方法: indexof search match starsWith  等
-  - 
+  - `` 模板字符串
+
+

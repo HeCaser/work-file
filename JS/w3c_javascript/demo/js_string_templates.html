@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <button onclick="fun1()">展示 " '</button>
+    <br>
+    <button onclick="fun2()">多行文案</button>
+    <br>
+    <button onclick="fun3()">${...} 插入内容</button>
+    <br>
+    
+</body>
+<script>
+
+    function fun1() {
+        let text = `He's often called "Johnny"`;
+        alert(text)
+    }
+    function fun2() {
+        let text = `我
+要
+换
+行`
+        alert(text)
+    }
+
+    function fun3() {
+       let price = 500
+       alert(`裤子的价格是${price}`)
+    }
+
+  
+</script>
+
+</html>
