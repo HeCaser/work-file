@@ -51,4 +51,7 @@
   - split 
   - ...
 
-  
+[String Search](06JS.md)
+
+  - 字符串检索相关方法: indexof search match starsWith  等
+  - 

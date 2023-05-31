@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <button onclick="fun1()">indexOf</button>
+    <br>
+    <button onclick="fun2()">lastIndexOf</button>
+    <br>
+    <button onclick="fun3()">search</button>
+    <br>
+    <button onclick="fun4()">match</button>
+    <br>
+</body>
+<script>
+
+    function fun1() {
+        let text = "pleace locate where locate is"
+        let index = text.indexOf('locate') // 7
+        console.log(index)
+    }
+    function fun2() {
+        let text = "pleace locate where locate is"
+        let index = text.lastIndexOf('locate') // 20
+        console.log(index)
+    }
+
+    function fun3() {
+        let text = "pleace locate locate where locate is"
+        let index = text.search('locate') // 7
+        console.log(index)
+    }
+
+    function fun4() {
+        let text = "The rain in SPAIN stays mainly in the plain";
+
+        let newText = text.match("ain");
+        console.log(newText) // ['ain', index: 5, input: 'The rain in SPAIN stays mainly in the plain', groups: undefined]
+
+        let newText2 = text.match(/ain/); 
+        console.log(newText2) // ['ain', index: 5, input: 'The rain in SPAIN stays mainly in the plain', groups: undefined]
+
+        let newText3 = text.match(/ain/g); 
+        console.log(newText3) // ['ain', 'ain', 'ain']
+
+        let newText4 = text.match(/ain/gi); 
+        console.log(newText4) // ['ain', 'AIN', 'ain', 'ain']
+
+    }
+</script>
+
+</html>
