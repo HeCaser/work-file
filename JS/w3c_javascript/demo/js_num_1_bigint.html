@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fun1()">bigint 类型</button>
+    <br>
+    <button onclick="fun2()">Number 超范围对比, bigint 对比</button>
+    <br>
+    <button onclick="fun3()">Number 范围</button>
+    <br>
+    <button onclick="fun4()">safeInteger</button>
+    <br>
+
+
+
+</body>
+<script>
+
+    function fun1() {
+        let a = 10n
+        alert(`a = ${a} type = ${typeof a}`)
+    }
+    function fun2() {
+        let t1 = `9007199254740992 === 9007199254740993 is ${9007199254740992 === 9007199254740993}`
+        let t2 = `9007199254740992n === 9007199254740993n is ${9007199254740992n === 9007199254740993n}`
+        alert(`${t1} \n ${t2}`)
+    }
+
+    function fun3() {
+        let x = Number.MAX_SAFE_INTEGER;
+        let y = Number.MIN_SAFE_INTEGER;
+        alert(`${x}\n ${y} `)
+        console.log("x " + x + " y= " + y)
+    }
+
+    function fun4() {
+        let text = `10 is safe ${Number.isSafeInteger(10)}`
+        let text2 = `0.3 is safe ${Number.isSafeInteger(0.3)}`
+        let text3 = `9007199254740991 is safe ${Number.isSafeInteger(9007199254740991)}`
+        let text4 = `9007199254740993 is safe ${Number.isSafeInteger(9007199254740993)}`
+
+        console.log(`${text}\n ${text2} \n ${text3} \n ${text4} `)
+    }
+
+
+</script>
+
+</html>
