@@ -63,3 +63,11 @@
   - 进制转换
   - BigInt
 
+[JS Number 相关2](08JS.md)
+
+  - Method: 
+    - 指数转换 toExponential() 
+    - 固定小数位 toFixed() 
+    - 固定整长 toPrecision 
+    - 转为为基础类型 valueOf()
+  - Properites: 

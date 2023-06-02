@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fun1()">toExponential</button>
+    <br>
+    <button onclick="fun2()">tofixed</button>
+    <br>
+    <button onclick="fun3()">toPrecision</button>
+    <br>
+    <button onclick="fun4()">valueof</button>
+    <br> <button onclick="fun5()">Number</button>
+    <br>
+
+
+
+</body>
+<script>
+
+    function fun1() {
+        let x = 9.656;
+        let t1 = x.toExponential(2);
+        let t2 = x.toExponential(4);
+        let t3 = x.toExponential(6);
+
+        console.log(`${t1} \n ${t2} \n ${t3} `)
+    }
+    function fun2() {
+        let x = 9.656;
+        let t1 = x.toFixed(2);
+        let t2 = x.toFixed(4);
+        let t3 = x.toFixed(6);
+
+        console.log(`${t1} \n ${t2} \n ${t3} `)
+    }
+
+    function fun3() {
+        let x = 139.656;
+        let t1 = x.toPrecision(2);
+        let t2 = x.toPrecision(4);
+        let t3 = x.toPrecision(10);
+
+        console.log(`${t1} \n ${t2} \n ${t3} `)
+    }
+
+    function fun4() {
+        let x = 139n;
+        let t1 = x.valueOf();
+        let t2 = Number(10).valueOf();
+        console.log(`${typeof t1} \n ${typeof t2}  `)
+    }
+
+    function fun5() {
+        Number(true);
+        Number(false);
+        Number("10");
+        Number("  10");
+        Number("10  ");
+        Number(" 10  ");
+        Number("10.33");
+        Number("10,33");
+        Number("10 33");
+        Number("John");
+        console.log(` Number(true) = ${Number(true)} \n  Number(false) = ${ Number(false)} \n  Number("  10") = ${ Number("  10")} \n Number("10 33") = ${Number("10 33")} \n  Number("John") =${ Number("John")}`)
+    }
+
+
+</script>
+
+</html>
