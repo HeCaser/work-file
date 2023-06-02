@@ -70,4 +70,6 @@
     - 固定小数位 toFixed() 
     - 固定整长 toPrecision 
     - 转为为基础类型 valueOf()
+    - 转换整型 parseInt()
+    - 转换浮点 parseFloat()
   - Properites: 
