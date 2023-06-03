@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fun1()">EPSILON</button>
+    <br>
+    <button onclick="fun2()">POSITIVE_INFINITY</button>
+    <br>
+
+
+</body>
+<script>
+
+    function fun1() {
+        let x = Number.EPSILON;
+        let y = Math.abs(0.1+0.2-0.3) < Number. EPSILON
+        console.log(`Number.EPSILON = ${x}
+        0.1+0.2==0.3 is ${0.1+0.2==0.3}
+       Math.abs(0.1+0.2-0.3) < Number. EPSILON is ${y}`)
+    }
+    function fun2() {
+        let x = Number.POSITIVE_INFINITY;
+        let y = Number.NEGATIVE_INFINITY;
+        console.log(`1/0 == Number.POSITIVE_INFINITY is ${1/0==Number.POSITIVE_INFINITY}`)
+
+    }
+
+   
+
+</script>
+
+</html>

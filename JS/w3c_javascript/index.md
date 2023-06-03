@@ -72,4 +72,9 @@
     - 转为为基础类型 valueOf()
     - 转换整型 parseInt()
     - 转换浮点 parseFloat()
+
   - Properites: 
+    - EPSILON
+    - MAX_VALUE
+    - MAX_SAFE_INTEGER
+    - POSITIVE_INFINITY
