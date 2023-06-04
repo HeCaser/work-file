@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fun1()">arrays</button>
+    <br>
+    <button onclick="fun2()">arrays prop</button>
+    <br>
+    <button onclick="fun3()">arrays foreach</button>
+    <br>
+    <button onclick="fun4()">arrays 类型</button>
+    <br>
+
+</body>
+<script>
+
+    function fun1() {
+       const cars =['奇瑞','比亚迪','长城']
+       console.log(`cars = ${cars}`)
+    }
+    function fun2() {
+        const cars =['奇瑞','比亚迪','长城']
+        console.log(`cars length= ${cars.length}`)
+        cars[3]='new'
+       console.log(`cars length= ${cars.length}`)
+    }
+
+   function fun3(){
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+    let text = "";
+    fruits.forEach((value,index)=>{
+        text += `${index} = ${value} \n `
+    });
+    console.log(`遍历后 = ${text}`)
+
+   }
+   function fun4(){
+    console.log(`[1,2] typeof is ${typeof [1,2]}`)
+
+    console.log(`[1,2] instanceof Array is ${[1,2] instanceof Array}`)
+   }
+ 
+
+</script>
+
+</html>
