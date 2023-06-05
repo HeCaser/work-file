@@ -79,7 +79,11 @@
     - MAX_SAFE_INTEGER
     - POSITIVE_INFINITY
 
-[JS array](09JS.md)
+[JS array: basic](09JS.md)
 
   - 数组: 创建,获取元素,赋值,遍历,判断 array 类型
-  - 
+  
+[JS arrary method](10JS.md)
+  - method: length join() pop() push()
+  - 拼接 concat() ,添加 splice(), 切割 slice()
+
