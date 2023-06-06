@@ -86,4 +86,5 @@
 [JS arrary method](10JS.md)
   - method: length join() pop() push()
   - 拼接 concat() ,添加 splice(), 切割 slice()
+  - 排序 sort() 
 

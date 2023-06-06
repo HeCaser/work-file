@@ -21,6 +21,12 @@
     <br>
     <button onclick="fun6()">slice</button>
     <br>
+    <button onclick="fun7()">sort</button>
+    <br>
+    <button onclick="fun8()">随机排序</button>
+    <br>
+    <button onclick="fun9()">math.min</button>
+    <br>
 
 </body>
 <script>
@@ -56,11 +62,43 @@
     }
 
     function fun6() {
-        const fruits = ["Banana", "Orange", "Apple", "Mango","Bird"];
+        const fruits = ["Banana", "Orange", "Apple", "Mango", "Bird"];
         console.log(`slice(0) =${fruits.slice(0)}
-        slice(1,3) = ${fruits.slice(1,3)}
-        slice(1,1) = ${fruits.slice(1,1)}`)
+        slice(1,3) = ${fruits.slice(1, 3)}
+        slice(1,1) = ${fruits.slice(1, 1)}`)
+    }
 
+    function fun7() {
+
+        const fruits = ["Banana", "Orange", "Apple"];
+        console.log(`sort is  ${fruits.sort()}
+       reverse is  ${fruits.reverse()}
+       `)
+
+        const points = [40, 100, 1, 5, 25, 10]
+        console.log(`points sort is =${points.sort()}`)
+        points.sort(function (a, b) {
+            return a - b
+        })
+        console.log(`points 自定义比较器 is =${points}`)
+    }
+
+
+    function fun8() {
+        const points = [40, 100, 1, 5, 25, 10]
+        points.sort(function (a, b) {
+            return 0.5 - Math.random()
+        })
+        console.log(`points 随机排序 is =${points}`)
+    }
+    function fun9() {
+        const points = [40, 100, 2, 5, 25, 10]
+        const min = Math.min.apply(null,points)
+        console.log(`points min is =${min}`)
+        
+        let a = Infinity
+        let b = Number.MIN_VALUE
+        console.log(`Number.MIN_VALUE < infinity is ${b < a}`)
     }
 
 
