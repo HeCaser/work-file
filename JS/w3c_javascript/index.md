@@ -88,3 +88,15 @@
   - 拼接 concat() ,添加 splice(), 切割 slice()
   - 排序 sort() 
 
+[JS Iteration](11JS.md)
+  - forEach()
+  - map()
+  - flatMap()
+  - reduce()
+  - every(), some()
+  - indexOf(),lastIndexOf()
+  - find(), findIndex()
+  - Array.from()
+  - Keys(),entries()
+  - includes()
+

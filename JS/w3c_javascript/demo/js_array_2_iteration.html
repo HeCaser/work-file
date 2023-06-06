@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fun1()">foreach()</button>
+    <br>
+    <button onclick="fun2()">map() 元素*2 </button>
+    <br>
+    <button onclick="fun3()">flatMap()</button>
+    <br>
+    <button onclick="fun4()">filter()</button>
+    <br>
+    <button onclick="fun5()">reduce()</button>
+    <br>
+    <button onclick="fun6()">every some</button>
+    <br>
+    <button onclick="fun7()">sort</button>
+    <br>
+    <button onclick="fun8()">Array.from("ABCDEFG");</button>
+    <br>
+    <button onclick="fun9()">Keys entries</button>
+    <br>
+    <button onclick="fun10()">includes</button>
+    <br> 
+    <button onclick="fun11()">spread ...</button>
+    <br>
+
+</body>
+<script>
+
+    function fun1() {
+        const cars = ['奇瑞', '比亚迪', '长城']
+        let text = ""
+        cars.forEach(myFun)
+
+        function myFun(value, index) {
+            text += `我是第${index}, name = ${value} \n`
+        }
+        console.log(`text = ${text}`)
+    }
+    function fun2() {
+        const numbers1 = [45, 4, 9, Infinity, 16, 25];
+        const numbers2 = numbers1.map(function (value) {
+            return value * 2
+        })
+        console.log(`numbers2 = ${numbers2}`)
+    }
+
+    function fun3() {
+        const myArr = [1, 2, 3, 4, 5, Infinity, 6];
+        const newArr = myArr.flatMap((x) => x * 2);
+        console.log(`newArr = ${newArr}`)
+
+    }
+    function fun4() {
+        const numbers = [45, 4, 9, 16, 25];
+        const newArr = numbers.filter(function (value) {
+            return value > 20
+        })
+        console.log(`newArr = ${newArr}`)
+    }
+    function fun5() {
+        const numbers = [1, 2, 3, 4];
+        let sum = numbers.reduce(function (total, value) {
+            return total += value
+        })
+        console.log(`sum = ${sum}`)
+        let sum2 = numbers.reduce(function (total, value) {
+            return total += value
+        }, 100)
+        console.log(`sum2 = ${sum2}`)
+    }
+
+    function fun6() {
+        const numbers = [45, 4, 9, 16, 25];
+        let e1 = numbers.every(function (value) {
+            return value > 28
+        })
+        let e2 = numbers.some(function (value) {
+            return value > 28
+        })
+        console.log(`每个大于 18 ${e1} \n 某个大于 18 ${e2}`)
+
+    }
+
+    function fun7() {
+
+        const fruits = ["Banana", "Orange", "Apple"];
+        console.log(`sort is  ${fruits.sort()}
+       reverse is  ${fruits.reverse()}
+       `)
+
+        const points = [40, 100, 1, 5, 25, 10]
+        console.log(`points sort is =${points.sort()}`)
+        points.sort(function (a, b) {
+            return a - b
+        })
+        console.log(`points 自定义比较器 is =${points}`)
+    }
+
+
+    function fun8() {
+        console.log(`Array.from("ABCDEFG") is =${Array.from("ABCDEFG")}`)
+    }
+
+    function fun9() {
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        const keys = fruits.keys();
+        let text = ''
+        for (let x of keys) {
+            text += x + ",";
+        }
+        console.log(`keys is ${text}`)
+
+        const entries = fruits.entries();
+        text = ''
+        for (let x of entries) {
+            text += x + ",";
+        }
+        console.log(`entries is ${text}`)
+    }
+
+    function fun10() {
+        const myArr = [1, 2, 3, 4, 5, 6, NaN];
+        console.log(`indexOf NaN is ${myArr.indexOf(NaN)} \nincludes NaN is ${myArr.includes(NaN)}`)
+    } 
+    
+    function fun11() {
+        const myArr = [1, 2, 3, 4, 5, 6, NaN];
+        const myArr2 = [7,8,8];
+        const a1 = [...myArr,...myArr2]
+        console.log(`spread is ${a1} \n`)
+    }
+
+
+</script>
+
+</html>
