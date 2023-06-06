@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fun1()">Date</button>
+    <br>
+    <button onclick="fun2()">Date display</button>
+    <br>
+    <button onclick="fun3()">flatMap()</button>
+    <br>
+    <button onclick="fun4()">filter()</button>
+    <br>
+    <button onclick="fun5()">reduce()</button>
+    <br>
+
+</body>
+<script>
+
+    function fun1() {
+        const date = new Date()
+        console.log(`now = ${date}`)
+
+        const date1 = new Date(9,10)
+        console.log(`year = ${date1.getFullYear()}`)
+    }
+    function fun2() {
+        const date = new Date()
+        console.log(`toString  = ${date.toString()}\n toDateString = ${date.toDateString()}\n toUTCString is ${date.toUTCString()} \n toISOString is ${date.toISOString()}`)
+    
+    }
+
+    function fun3() {
+        const myArr = [1, 2, 3, 4, 5, Infinity, 6];
+        const newArr = myArr.flatMap((x) => x * 2);
+        console.log(`newArr = ${newArr}`)
+
+    }
+    function fun4() {
+        const numbers = [45, 4, 9, 16, 25];
+        const newArr = numbers.filter(function (value) {
+            return value > 20
+        })
+        console.log(`newArr = ${newArr}`)
+    }
+    function fun5() {
+        const numbers = [1, 2, 3, 4];
+        let sum = numbers.reduce(function (total, value) {
+            return total += value
+        })
+        console.log(`sum = ${sum}`)
+        let sum2 = numbers.reduce(function (total, value) {
+            return total += value
+        }, 100)
+        console.log(`sum2 = ${sum2}`)
+    }
+
+    function fun6() {
+        const numbers = [45, 4, 9, 16, 25];
+        let e1 = numbers.every(function (value) {
+            return value > 28
+        })
+        let e2 = numbers.some(function (value) {
+            return value > 28
+        })
+        console.log(`每个大于 18 ${e1} \n 某个大于 18 ${e2}`)
+
+    }
+
+
+</script>
+
+</html>
