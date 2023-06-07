@@ -109,11 +109,14 @@
 [JS Date Method](13JS.md)
   - getFullYear()
   - getMonth()
-  - getDate()
+  - getDate() 1-31
   - getHours(), getMinutes(), getSeconds()
   - getDay() 星期几
   - getTime() 时间戳
   - Date.now() 时间戳
   - getUTC**() 返回 UTC 基准的年月日,时分秒
   - getTimezoneOffset() 以分钟单位返回当前时区与 UTC 时间差
+  - get 都有对应的 set
+  - setFullYear(), setMonth() ,setDate() 等
+  - Compare Dates 日期比较 d1 > d2
 

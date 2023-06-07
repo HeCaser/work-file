@@ -15,8 +15,12 @@
     <br>
     <button onclick="fun3()">getTimezoneOffset()</button>
     <br>
-    
-   
+    <button onclick="fun4()">set Method</button>
+    <br>
+    <button onclick="fun5()">date compare</button>
+    <br>
+
+
 
 </body>
 <script>
@@ -37,11 +41,20 @@
     function fun3() {
         const date = new Date()
         const minute = date.getTimezoneOffset()
-        console.log(`当前时区比 UTC 时区, 相差 ${minute} 分钟 相当于 ${minute/60} 小时`)
+        console.log(`当前时区比 UTC 时区, 相差 ${minute} 分钟 相当于 ${minute / 60} 小时`)
     }
-   
-    function fun4(){
 
+    function fun4() {
+        const date = new Date()
+        date.setDate(date.getDate() + 30)
+        console.log(`30 天之后是 ${date}`)
+    }
+
+    function fun5() {
+        const date = new Date(2023, 01, 01)
+        const date2 = new Date();
+        const date3 = new Date(1990, 01, 02);
+        console.log(` date2 > date is ${date2 > date}\n date3 < date is ${date3<date}`)
     }
 
 </script>
