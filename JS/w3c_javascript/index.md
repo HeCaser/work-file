@@ -106,5 +106,12 @@
   - 展示: toString(),toDateString(),toUTCString()
   - ISO UTC Time Zones
 
-
+[JS Date Method](13JS.md)
+  - getFullYear()
+  - getMonth()
+  - getDate()
+  - getHours(), getMinutes(), getSeconds()
+  - getDay() 星期几
+  - getTime() 时间戳
+  - Date.now() 时间戳
 
