@@ -114,4 +114,6 @@
   - getDay() 星期几
   - getTime() 时间戳
   - Date.now() 时间戳
+  - getUTC**() 返回 UTC 基准的年月日,时分秒
+  - getTimezoneOffset() 以分钟单位返回当前时区与 UTC 时间差
 

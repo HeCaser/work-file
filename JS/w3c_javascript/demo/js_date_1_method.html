@@ -13,10 +13,9 @@
     <br>
     <button onclick="fun2()">getUTC Method</button>
     <br>
-    <button onclick="fun3()">Date format</button>
+    <button onclick="fun3()">getTimezoneOffset()</button>
     <br>
-    <button onclick="fun4()">parse mills</button>
-    <br>
+    
    
 
 </body>
@@ -30,29 +29,19 @@
     }
     function fun2() {
         const date = new Date()
-        console.log(`toString  = ${date.toString()}\n toDateString = ${date.toDateString()}\n toUTCString is ${date.toUTCString()} \n toISOString is ${date.toISOString()}`)
-    
+      
+        console.log(` utc-year = ${date.getUTCFullYear()}\n utc-month = ${date.getUTCMonth()} \n utc-day = ${date.getUTCDate()} `)
+        console.log(` utc-hour = ${date.getUTCHours()}\n utc-minute = ${date.getUTCMinutes()} \n utc-second = ${date.getUTCSeconds()} `)
+        console.log(`utc-星期 = ${date.getUTCDay()} \n utc-毫秒值 = ${date.getTime()}`)
     }
 
     function fun3() {
-      const date = new Date("2023 06 01")
-      const date2 = new Date("2023-06-01")
-      console.log(`date = ${date}\ndate2 = ${date2}`)
-
-      const d = new Date("2015-03-25T12:00:00Z"); // UTC-0 ,具体会根据当前时区变化, 例如 UTC+8 会变为 20 点
-      console.log(`d = ${d}\n`)
-
-      const d2 = new Date("2015-03-25T12:00:00+08:00"); // 去掉 Z 代表相对时间 +08:00 代表 UTC+8 , 可以得到北京时间(12点): Wed Mar 25 2015 12:00:00 GMT+0800 (中国标准时间)
-      console.log(`d2 = ${d2}\n`)
+        const date = new Date()
+        const minute = date.getTimezoneOffset()
+        console.log(`当前时区比 UTC 时区, 相差 ${minute} 分钟 相当于 ${minute/60} 小时`)
 
     }
-    function fun4() {
-        let mills = Date.parse("2023-06-07")
-        const d = new Date(mills)
-        console.log(`d = ${d}`) //  Wed Jun 07 2023 08:00:00 GMT+0800 (中国标准时间)
-    }
-  
-
+   
 
 </script>
 
