@@ -104,6 +104,7 @@
 [JS Date](12JS.md)
   - Date() 对象创建
   - 展示: toString(),toDateString(),toUTCString()
+  - ISO UTC Time Zones
 
-  
+
 
