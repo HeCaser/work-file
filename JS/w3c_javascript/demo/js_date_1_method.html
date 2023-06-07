@@ -29,7 +29,6 @@
     }
     function fun2() {
         const date = new Date()
-      
         console.log(` utc-year = ${date.getUTCFullYear()}\n utc-month = ${date.getUTCMonth()} \n utc-day = ${date.getUTCDate()} `)
         console.log(` utc-hour = ${date.getUTCHours()}\n utc-minute = ${date.getUTCMinutes()} \n utc-second = ${date.getUTCSeconds()} `)
         console.log(`utc-星期 = ${date.getUTCDay()} \n utc-毫秒值 = ${date.getTime()}`)
@@ -39,9 +38,11 @@
         const date = new Date()
         const minute = date.getTimezoneOffset()
         console.log(`当前时区比 UTC 时区, 相差 ${minute} 分钟 相当于 ${minute/60} 小时`)
-
     }
    
+    function fun4(){
+
+    }
 
 </script>
 
