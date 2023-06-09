@@ -120,3 +120,10 @@
   - setFullYear(), setMonth() ,setDate() 等
   - Compare Dates 日期比较 d1 > d2
 
+[JS Math](14JS.md)
+
+
+
+
+
+
