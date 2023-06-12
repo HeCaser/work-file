@@ -9,13 +9,13 @@
 </head>
 
 <body>
-    <button onclick="fun1()">math method</button>
+    <button onclick="fun1()">math round</button>
     <br>
-    <button onclick="fun2()">shift unshift</button>
+    <button onclick="fun2()">math ceil</button>
     <br>
-    <button onclick="fun3()">delete</button>
+    <button onclick="fun3()">math floor</button>
     <br>
-    <button onclick="fun4()">flat</button>
+    <button onclick="fun4()">math trunc</button>
     <br>
     <button onclick="fun5()">splice</button>
     <br>
@@ -36,23 +36,24 @@
     }
     
     function fun2() {
-        const cars = ['奇瑞', '比亚迪', '长城']
-        console.log(`cars shift is  ${cars.shift()}`)
-        console.log(`cars unshift  is ${cars.unshift("BYD")}`)
-        console.log(`cars is ${cars}`)
+        console.log(`Math.ceil(4.0) is ${Math.ceil(4.0)}
+        Math.ceil(4.8) is ${Math.ceil(4.8)}
+        Math.ceil(-4.0) is ${Math.ceil(-4.0)}
+        Math.ceil(-4.9) is ${Math.ceil(-4.9)}`)
     }
 
     function fun3() {
-        const fruits = ["Banana", "Orange", "Apple"];
-        console.log(`before delete is ${fruits}`)
-        delete fruits[1];
-        console.log(`after delete is ${fruits} 长度 =${fruits.length}`)
+        console.log(`Math.floor(4.0) is ${Math.floor(4.0)}
+        Math.floor(4.8) is ${Math.floor(4.8)}
+        Math.floor(-4.0) is ${Math.floor(-4.0)}
+        Math.floor(-4.9) is ${Math.floor(-4.9)}`)
 
     }
     function fun4() {
-        const myArr = [[1, 2], [3, 4], [5, 6]];
-        const newArr = myArr.flat();
-        console.log(`newArr = ${newArr}`)
+        console.log(`Math.trunc(4.0) is ${Math.trunc(4.0)}
+        Math.trunc(4.8) is ${Math.trunc(4.8)}
+        Math.trunc(-4.0) is ${Math.trunc(-4.0)}
+        Math.flotruncor(-4.9) is ${Math.trunc(-4.9)}`)
     }
     function fun5() {
         const fruits = ["Banana", "Orange", "Apple", "Mango"];

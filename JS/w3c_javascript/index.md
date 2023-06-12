@@ -121,8 +121,7 @@
   - Compare Dates 日期比较 d1 > d2
 
 [JS Math](14JS.md)
-
-
+  - Number 方法: round(),ceil(),floor(),trunc()
 
 
 
