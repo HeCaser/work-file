@@ -21,7 +21,7 @@
     <br>
     <button onclick="fun6()">math method coll</button>
     <br>
-    
+     <button onclick="fun7()">math random</button>
 
 </body>
 <script>
@@ -73,7 +73,16 @@
        `)
     }
 
+    function fun7(){
+        let r1 = Math.random()
+        console.log(`random is ${r1}
+        (0,10] 随机整数 = ${_1_10()}`)
+    }
 
+
+    function _1_10(){
+        return Math.floor(Math.random()*10)
+    }
 
 
 </script>

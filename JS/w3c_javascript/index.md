@@ -129,6 +129,8 @@
   - log() log2()
   - 其他 Math Method
 
+  - Random() 生成不同范围内随机数
+
 
 
 
