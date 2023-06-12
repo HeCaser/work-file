@@ -120,8 +120,14 @@
   - setFullYear(), setMonth() ,setDate() 等
   - Compare Dates 日期比较 d1 > d2
 
-[JS Math](14JS.md)
-  - Number 方法: round(),ceil(),floor(),trunc()
+[JS Math Method](14JS.md)
+  - 方法: round(),ceil(),floor(),trunc()
+  - pow(),sign()
+  - sin(),cos()
+  - min(),max()
+  - random()
+  - log() log2()
+  - 其他 Math Method
 
 
 
