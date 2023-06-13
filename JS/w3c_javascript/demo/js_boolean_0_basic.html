@@ -14,7 +14,8 @@
     <button onclick="fun2()">nullish ?? </button>
     <br>
     <button onclick="fun3()">?.</button>
-    
+    <br>
+    <button onclick="fun4()">if else</button>
 
 </body>
 <script>
@@ -32,6 +33,19 @@
     function fun3() {
         const car = { type: "Fiat", model: "500", color: "white" };
         console.log(`car name is ${car?.name}`)
+    }
+
+    function fun4() {
+        let x = Math.random()
+        let y = 0
+        if (x < 0.3) {
+            y = 'x less than 0.3'
+        } else if (x < 0.7) {
+            y = 'x in 0.3 ~ 0.7'
+        } else {
+            y = 'x >= 0.7'
+        }
+        console.log(`x is ${x} and ${y}`)
     }
 
 </script>
