@@ -142,4 +142,6 @@
 
   - if else
 
-
+[JS Switch](16JS.md)
+  - switch
+  - 
