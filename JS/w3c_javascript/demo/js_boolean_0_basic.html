@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fun1()">boolean</button>
+    <br>
+    <button onclick="fun2()">nullish ?? </button>
+    <br>
+    <button onclick="fun3()">?.</button>
+    
+
+</body>
+<script>
+
+    function fun1() {
+        let a = -3 ? true : false
+        console.log(` -3 is = ${a}`)
+    }
+    function fun2() {
+        let name = null
+        let showName = name ?? "游客"
+        console.log(`showName = ${showName}`)
+    }
+
+    function fun3() {
+        const car = { type: "Fiat", model: "500", color: "white" };
+        console.log(`car name is ${car?.name}`)
+    }
+
+</script>
+
+</html>

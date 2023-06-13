@@ -132,5 +132,12 @@
   - Random() 生成不同范围内随机数
 
 
+[JS Booleans Comparisons](15JS.md)
+  - Booleans
+  - Comparisons
+  - 逻辑操作符 && || !
+  - 三目运算 value = (condition)? v1:v2
+  - ?? 操作符
+  - ?. 操作符
 
 
