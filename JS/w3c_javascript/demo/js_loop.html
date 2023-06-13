@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fun1()">for 循环求和</button>
+    <br>
+    <button onclick="fun2()">var 作用域: 全局</button>
+    <br>
+    <button onclick="fun3()">let 作用域: 局部</button>
+    <br>
+    <button onclick="fun4()">for in</button>
+
+</body>
+<script>
+
+    function fun1() {
+        let a = 0
+        for (let i = 0; i < 101; i++) {
+            a += i;
+        }
+        console.log(`0-100 之和 = ${a}`)
+    }
+    function fun2() {
+        var i = 5
+        for (i = 0; i < 101; i++) {
+            
+        }
+        console.log(`i is ${i}`)
+    }
+
+    function fun3() {
+        var i = 5
+        for (let i = 0; i < 101; i++) {
+            
+        }
+        console.log(`i is ${i}`)
+    }
+
+    function fun4() {
+        let x = Math.random()
+        let y = 0
+        if (x < 0.3) {
+            y = 'x less than 0.3'
+        } else if (x < 0.7) {
+            y = 'x in 0.3 ~ 0.7'
+        } else {
+            y = 'x >= 0.7'
+        }
+        console.log(`x is ${x} and ${y}`)
+    }
+
+</script>
+
+</html>

@@ -142,6 +142,7 @@
 
   - if else
 
-[JS Switch](16JS.md)
+[JS Switch Loop](16JS.md)
   - switch
-  - 
+  - for() 循环, 变量作用域
+  - for in
