@@ -19,6 +19,8 @@
     <br>
     <button onclick="fun5()">for each</button>
 
+    <br> <button onclick="fun6()">for of</button>
+
 </body>
 <script>
 
@@ -57,21 +59,35 @@
         const numbers = [45, 4, 9, 16, 25];
         let text2 = "";
         for (let x in numbers) {
-            text2 += numbers[x]+' ';
+            text2 += numbers[x] + ' ';
         }
         console.log(`num for in is ${text2}`)
     }
 
     function fun5() {
         const numbers = [45, 4, 9, 16, 25];
-        let text ='\n'
-        numbers.forEach(function(value,index,array){
+        let text = '\n'
+        numbers.forEach(function (value, index, array) {
             text += `我是第 ${index} 个,值是 ${value}\n`
         })
         console.log(`num for in is ${text}`)
     }
 
+    function fun6() {
+        const num = [1, 2, 3, 4, 5]
+        let text = ''
+        for (n of num) {
+            text += ` ${n}`
+        }
+        console.log(`text is ${text}`)
 
+        const str = "JS is good"
+        let text2 = ''
+        for (c of str) {
+            text2 += c
+        }
+        console.log(`text2 is ${text2}`)
+    }
 </script>
 
 </html>

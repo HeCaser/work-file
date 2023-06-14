@@ -147,4 +147,8 @@
   - for() 循环, 变量作用域
   - for in
   - Array.forEach()
+  - for of, 轮询迭代器 iterable
+  - while loop
+
+
 
