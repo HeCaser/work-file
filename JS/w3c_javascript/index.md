@@ -146,3 +146,5 @@
   - switch
   - for() 循环, 变量作用域
   - for in
+  - Array.forEach()
+

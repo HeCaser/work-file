@@ -16,6 +16,8 @@
     <button onclick="fun3()">let 作用域: 局部</button>
     <br>
     <button onclick="fun4()">for in</button>
+    <br>
+    <button onclick="fun5()">for each</button>
 
 </body>
 <script>
@@ -30,7 +32,7 @@
     function fun2() {
         var i = 5
         for (i = 0; i < 101; i++) {
-            
+
         }
         console.log(`i is ${i}`)
     }
@@ -38,23 +40,37 @@
     function fun3() {
         var i = 5
         for (let i = 0; i < 101; i++) {
-            
+
         }
         console.log(`i is ${i}`)
     }
 
     function fun4() {
-        let x = Math.random()
-        let y = 0
-        if (x < 0.3) {
-            y = 'x less than 0.3'
-        } else if (x < 0.7) {
-            y = 'x in 0.3 ~ 0.7'
-        } else {
-            y = 'x >= 0.7'
+        const person = { fname: "John", lname: "Doe", age: 25 };
+        let text = '\n'
+        for (const key in person) {
+            text += `我是属性 ${key}; 属性值 = ${person[key]}\n`
         }
-        console.log(`x is ${x} and ${y}`)
+
+        console.log(`for in object is ${text}`)
+
+        const numbers = [45, 4, 9, 16, 25];
+        let text2 = "";
+        for (let x in numbers) {
+            text2 += numbers[x]+' ';
+        }
+        console.log(`num for in is ${text2}`)
     }
+
+    function fun5() {
+        const numbers = [45, 4, 9, 16, 25];
+        let text ='\n'
+        numbers.forEach(function(value,index,array){
+            text += `我是第 ${index} 个,值是 ${value}\n`
+        })
+        console.log(`num for in is ${text}`)
+    }
+
 
 </script>
 
