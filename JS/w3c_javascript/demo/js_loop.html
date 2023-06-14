@@ -21,6 +21,7 @@
 
     <br> <button onclick="fun6()">for of</button>
     <br> <button onclick="fun7()">break continue label</button>
+    <br> <button onclick="fun8()">iterable</button>
 
 </body>
 <script>
@@ -112,7 +113,13 @@
         }
         console.log(` text2 is ${text2}`)
 
+    }
 
+    function fun8() {
+        const letters = new Set(["a", "b", "c"]);
+        for (const x of letters) {
+           console.log(` iterable is ${x}`)
+        }
     }
 </script>
 
