@@ -20,6 +20,7 @@
     <button onclick="fun5()">for each</button>
 
     <br> <button onclick="fun6()">for of</button>
+    <br> <button onclick="fun7()">break continue label</button>
 
 </body>
 <script>
@@ -87,6 +88,31 @@
             text2 += c
         }
         console.log(`text2 is ${text2}`)
+    }
+
+    function fun7() {
+        const num = [1, 2, 3, 4, 5, 6]
+        let text = ''
+        for (n of num) {
+            if (n === 3) {
+                continue
+            }
+            text += `${n} `
+        }
+        console.log(` text is ${text}`)
+
+
+        let text2 = '不可以喝酒'
+        const person = { name: 'hepan', age: 19 }
+        label: {
+            if (person.age < 18) {
+                break label
+            }
+            text2 = '我可以喝酒'
+        }
+        console.log(` text2 is ${text2}`)
+
+
     }
 </script>
 
