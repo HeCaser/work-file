@@ -155,3 +155,6 @@
   - lable: 指定终止位置
   - Iterable
 
+[JS Set Maps](18JS.md)
+  - new Set()
+  - set.add
