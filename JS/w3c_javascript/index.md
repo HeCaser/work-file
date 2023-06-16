@@ -156,5 +156,7 @@
   - Iterable
 
 [JS Set Maps](18JS.md)
-  - new Set()
-  - set.add
+  - new Set(数组)
+  - set.add, 遍历
+  - new Map(二维数组)
+  - map.set(), size, delete(), has()

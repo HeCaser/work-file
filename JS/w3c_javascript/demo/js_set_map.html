@@ -9,35 +9,37 @@
 </head>
 
 <body>
-    <br> <button onclick="fun1()">set 创建, add</button>
+    <br> <button onclick="fun1()">set 创建, add()</button>
     <br> <button onclick="fun2()">set 遍历 forEach , values()</button>
-    <br> <button onclick="fun3()">iterable</button>
+    <br> <button onclick="fun3()">map 创建,添加元素 set()</button>
+    <br> <button onclick="fun4()">map 顺序测试: key 按照插入顺序排列</button>
+    <br> <button onclick="fun5()">map 遍历 forEach entires</button>
 
 </body>
 <script>
 
     function fun1() {
         const set = new Set()
-        var a ="b"
+        var a = "b"
         set.add(a) // add "b"
         set.add("c")
 
         let text = ''
-        for(x of set.values()){
-            text +=`${x} `
+        for (x of set.values()) {
+            text += `${x} `
         }
         console.log(`set is ${text}`)
     }
     function fun2() {
-        const set = new Set([1,2,3,4,5])
-        
-        let t1 =''
-        set.forEach(function(value){
+        const set = new Set([1, 2, 3, 4, 5])
+
+        let t1 = ''
+        set.forEach(function (value) {
             t1 += `${value} `
         })
 
-        let t2 =''
-        for(x of set.values()){
+        let t2 = ''
+        for (x of set.values()) {
             t2 += `${x} `
         }
 
@@ -45,37 +47,44 @@
     }
 
     function fun3() {
-        var i = 5
-        for (let i = 0; i < 101; i++) {
+        const map = new Map([["apple", 10.8], ["orange", 3.5]])
+        map.set("banan", 7.8)
 
-        }
-        console.log(`i is ${i}`)
+        var p1 = map.get("apple")
+        var p2 = map.get("banan")
+        console.log(`apple price is ${p1}\nbanan price is ${p2}`)
+
+
     }
 
     function fun4() {
-        const person = { fname: "John", lname: "Doe", age: 25 };
-        let text = '\n'
-        for (const key in person) {
-            text += `我是属性 ${key}; 属性值 = ${person[key]}\n`
+        const map = new Map()
+        let t1 = ''
+        for (let i = 0; i < 10; i++) {
+            let r = Math.ceil(Math.random() * 10)
+            t1 += `${r} `
+            map.set(r, r)
         }
+        console.log(`map 的添加顺序 = ${t1}`)
 
-        console.log(`for in object is ${text}`)
+        let t2 = ''
+        map.forEach(function (value, key) {
+            t2 += `${value} `
+        })
 
-        const numbers = [45, 4, 9, 16, 25];
-        let text2 = "";
-        for (let x in numbers) {
-            text2 += numbers[x] + ' ';
-        }
-        console.log(`num for in is ${text2}`)
+        console.log(`map 的存储顺序 = ${t2}`)
     }
 
     function fun5() {
-        const numbers = [45, 4, 9, 16, 25];
-        let text = '\n'
-        numbers.forEach(function (value, index, array) {
-            text += `我是第 ${index} 个,值是 ${value}\n`
-        })
-        console.log(`num for in is ${text}`)
+        const map = new Map()
+        map.set("1", "a")
+        map.set("3", "c")
+        map.set("10", "cc")
+        map.set("2", "b")
+
+        for (x of map.entries()) {
+            console.log(`x is  ${x}, key is ${x[0]} value is ${x[1]}`)
+        }
     }
 
     function fun6() {
@@ -121,7 +130,7 @@
     function fun8() {
         const letters = new Set(["a", "b", "c"]);
         for (const x of letters) {
-           console.log(` iterable is ${x}`)
+            console.log(` iterable is ${x}`)
         }
     }
 </script>
