@@ -160,3 +160,9 @@
   - set.add, 遍历
   - new Map(二维数组)
   - map.set(), size, delete(), has()
+  - map 遍历:forEach(), entries()
+
+[JS 类型相关](19JS.md)
+  - typeof
+  - object.constructor : 返回对象的构造方法, 可以用来判断类型
+  - instanceof

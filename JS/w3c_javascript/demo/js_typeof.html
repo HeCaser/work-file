@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fun1()">type of</button>
+    <br>
+    <button onclick="fun2()">constructor, 判断对象是否是某种类型</button>
+    <br>
+    <button onclick="fun3()">instanceof</button>
+    <br>
+    <button onclick="fun4()">for in</button>
+    <br>
+    <button onclick="fun5()">for each</button>
+
+    <br> <button onclick="fun6()">for of</button>
+    <br> <button onclick="fun7()">break continue label</button>
+    <br> <button onclick="fun8()">iterable</button>
+
+</body>
+<script>
+
+    function fun1() {
+        console.log(`typeof "John" is ${typeof "John"}
+        typeof 3.14 is ${typeof 3.14}
+        typeof NaN is ${typeof NaN}
+        typeof false is ${typeof false}
+        typeof [1,2,3,4] is ${typeof [1, 2, 3, 4]}
+        typeof function () {} is ${typeof function () { }}
+        typeof null is ${typeof null}`)
+    }
+    function fun2() {
+        const arr = [1, 2]
+        const isArray = arr.constructor.toString().indexOf("Array") > -1
+        const isArray2 = arr.constructor === Array
+        console.log(`"John".constructor is ${"John".constructor}
+        [1,2] is Array: ${isArray} ${isArray2}`)
+    }
+
+    function fun3() {
+        console.log(`"1" instanceof String is ${ "1" instanceof String}
+        new String(1) instanceof String is ${new String(1) instanceof String}`)
+    }
+
+    function fun4() {
+        const person = { fname: "John", lname: "Doe", age: 25 };
+        let text = '\n'
+        for (const key in person) {
+            text += `我是属性 ${key}; 属性值 = ${person[key]}\n`
+        }
+
+        console.log(`for in object is ${text}`)
+
+        const numbers = [45, 4, 9, 16, 25];
+        let text2 = "";
+        for (let x in numbers) {
+            text2 += numbers[x] + ' ';
+        }
+        console.log(`num for in is ${text2}`)
+    }
+
+    function fun5() {
+        const numbers = [45, 4, 9, 16, 25];
+        let text = '\n'
+        numbers.forEach(function (value, index, array) {
+            text += `我是第 ${index} 个,值是 ${value}\n`
+        })
+        console.log(`num for in is ${text}`)
+    }
+
+    function fun6() {
+        const num = [1, 2, 3, 4, 5]
+        let text = ''
+        for (n of num) {
+            text += ` ${n}`
+        }
+        console.log(`text is ${text}`)
+
+        const str = "JS is good"
+        let text2 = ''
+        for (c of str) {
+            text2 += c
+        }
+        console.log(`text2 is ${text2}`)
+    }
+
+    function fun7() {
+        const num = [1, 2, 3, 4, 5, 6]
+        let text = ''
+        for (n of num) {
+            if (n === 3) {
+                continue
+            }
+            text += `${n} `
+        }
+        console.log(` text is ${text}`)
+
+
+        let text2 = '不可以喝酒'
+        const person = { name: 'hepan', age: 19 }
+        label: {
+            if (person.age < 18) {
+                break label
+            }
+            text2 = '我可以喝酒'
+        }
+        console.log(` text2 is ${text2}`)
+
+    }
+
+    function fun8() {
+        const letters = new Set(["a", "b", "c"]);
+        for (const x of letters) {
+            console.log(` iterable is ${x}`)
+        }
+    }
+</script>
+
+</html>

@@ -24,6 +24,10 @@ alias.cp=cherry-pick
 - IDE 打开新项目 new-dir
 - 切换为正常分支(和已开项目分支不同)
   
+  `git worktree list` 查看所有 worktree 名称
+
+  `git worktree remove -f 名称`
+  
 ---
 
 # git set
