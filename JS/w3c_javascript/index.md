@@ -166,3 +166,5 @@
   - typeof
   - object.constructor : 返回对象的构造方法, 可以用来判断类型
   - instanceof
+  - 类型转换
+
