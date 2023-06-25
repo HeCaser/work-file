@@ -13,6 +13,8 @@
     <br> <button onclick="fun1()">regex:string search</button>
     <br> <button onclick="fun2()">正则:修饰符</button>
     <br> <button onclick="fun3()">() []</button>
+    <br> <button onclick="fun4()">\d \s \b </s></button>
+    <br> <button onclick="fun5()">RegExp</s></button>
 
     <script>
         function fun1() {
@@ -29,8 +31,8 @@
             const t2 = text.match(/[abc]/g)
             console.log(`abcdefg0123456 match /[abc]/ is ${t1}
             abcdefg0123456 match /[abc]/g is ${t2}`)
-        }  
-        
+        }
+
         function fun3() {
             const text = 'abcdefg0123456'
             const t1 = text.match(/[abc]/g)
@@ -38,13 +40,47 @@
             const t3 = text.match(/[0124]/g)
             const t4 = text.match(/[0-5]/g)
             const t5 = text.match(/(0|2)/g)
+            const t6 = text.match(/(01)/g)
 
 
             console.log(`${text} match /[abc]/g is ${t1}
             ${text} match /[a-c]/g is ${t2}
             ${text} match /[0124]/g is ${t3}
             ${text} match /[0-5]/g is ${t4}
-            ${text} match /(0|2)/g is ${t5}`)
+            ${text} match /(0|2)/g is ${t5}
+            ${text} match /(01)/g is ${t6}`)
+        }
+        function fun4() {
+            const text = 'abc def g01 23456'
+            const t1 = text.match(/\d/g)
+            const t2 = text.match(/\s/g)
+            const t3 = text.match(/\bde/g)
+            const t4 = text.match(/01\b/g)
+
+            console.log(`${text} match /\d/g is ${t1}
+            ${text} match /\s/g is ${t2}
+            ${text} match /\bde/g is ${t3}
+            ${text} match /01\b/g is ${t4}
+           
+        `)
+        }
+
+        function fun5(){
+            const text = 'abc def ge01 234 56'
+            let r = /e/g  // RegExp
+            console.log(`r constructor is ${r.constructor === RegExp}
+            r.test(text) ${r.test(text)}`)
+
+            let e1 = r.exec(text)
+            console.log(`e1 is ${e1}`)
+
+            const reg = new RegExp("(def).*?(234)");
+            const reg2 = new RegExp(".*?(def).*?(234).*?$");
+            const result = text.replace(reg,`第一组:$1 , 第二组: $2`)
+            const result2 = text.replace(reg2,`第一组:$1 , 第二组: $2`)
+            
+            console.log(`reg 分组替换 = ${result}`)
+            console.log(`reg2 分组替换 = ${result2}`)
         }
 
     </script>
