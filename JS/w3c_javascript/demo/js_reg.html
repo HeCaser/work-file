@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <br> <button onclick="fun1()">regex:string search</button>
+    <br> <button onclick="fun2()">正则:修饰符</button>
+    <br> <button onclick="fun3()">() []</button>
+
+    <script>
+        function fun1() {
+            const text = "hellow i am hepan"
+            let index = text.search('hepan')
+            let index2 = text.search(/hepan/i)
+            console.log(`index = ${index}
+                index2 = ${index2}`)
+        }
+
+        function fun2() {
+            const text = 'abcdefg0123456'
+            const t1 = text.match(/[abc]/)
+            const t2 = text.match(/[abc]/g)
+            console.log(`abcdefg0123456 match /[abc]/ is ${t1}
+            abcdefg0123456 match /[abc]/g is ${t2}`)
+        }  
+        
+        function fun3() {
+            const text = 'abcdefg0123456'
+            const t1 = text.match(/[abc]/g)
+            const t2 = text.match(/[a-c]/g)
+            const t3 = text.match(/[0124]/g)
+            const t4 = text.match(/[0-5]/g)
+            const t5 = text.match(/(0|2)/g)
+
+
+            console.log(`${text} match /[abc]/g is ${t1}
+            ${text} match /[a-c]/g is ${t2}
+            ${text} match /[0124]/g is ${t3}
+            ${text} match /[0-5]/g is ${t4}
+            ${text} match /(0|2)/g is ${t5}`)
+        }
+
+    </script>
+</body>
+
+</html>
