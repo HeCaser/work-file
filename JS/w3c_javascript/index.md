@@ -182,3 +182,8 @@
   - RegExp: test() exec(), 分组查找替换
 
 
+[JS Errors,Scope](22JS.md)
+  - try catch finally
+  - The Error Object
+  - 作用域
+
