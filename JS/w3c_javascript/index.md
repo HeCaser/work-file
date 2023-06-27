@@ -188,7 +188,8 @@
   - 作用域
 
 
-[JS this](23JS.md)
+[JS this, arrow function, class](23JS.md)
   - this 关键字
   - Arrow function : let myFunction = (a, b) => a * b;
-  
+  - class
+
