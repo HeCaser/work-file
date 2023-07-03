@@ -19,14 +19,14 @@ alias.cp=cherry-pick
 步骤
 -  创建 workfile, 指定一个不存在的分支
 
-    `git worktree add ../new-dir not-existing_branch`
+    `git worktree add ../new-dir (可选项:拉取指定分支)`
 
 - IDE 打开新项目 new-dir
 - 切换为正常分支(和已开项目分支不同)
   
   `git worktree list` 查看所有 worktree 名称
 
-  `git worktree remove -f 名称`
+  `git worktree remove -f 名称` -f 代表强制删除,可以删除包含 submodule 的工程
   
 ---
 
