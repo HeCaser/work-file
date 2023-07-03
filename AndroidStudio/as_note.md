@@ -3,6 +3,7 @@
 ## 在 AS 窗口之间切换
 - 可以使用 mac 快捷键 cmd + ~
 - 可以在 AS 中配置快捷键 
-<img src='as01.png'>
+
+<img src='img/as01.png'>
 
 ## 
