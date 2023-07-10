@@ -193,3 +193,6 @@
   - Arrow function : let myFunction = (a, b) => a * b;
   - class
 
+[JS Modules](24JS.md)
+  - 模块化: 代码分离,方便管理,复用等
+  - 模块的 export import 写法
