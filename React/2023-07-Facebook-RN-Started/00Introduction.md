@@ -44,7 +44,7 @@ component 由 function 来定义, 可以把组件看成模板,无论方法返回
 最后利用 JS 的 `export default` 导出 component
 
 
-## JSX
+## `JSX`
 
 JSX 是一种语法, 可以用类似 `<Text>Hello, I am your cat!</Text>` 的样式写 JS 代码. 因为是 JS 代码, 所以可以直接定义变量使用
 
@@ -57,7 +57,7 @@ const Cat = () => {
 
 JS 代码放置在 {} 中执行,包括 function 调用
 
-## Props
+## `Props`
 
 是 `properties` 的缩写, 通过传参实现 component 自定义能力, RN 的大部分核心组件都定义了参数传递, 例如 Image 传递 source
 
@@ -81,7 +81,7 @@ const Cafe = () => {
 };
 ```
 
-## State
+## `State`
 
 While you can think of props as arguments you use to configure how components render, state is like a component’s personal data storage. State is useful for handling data that changes over time or that comes from user interaction. State gives your components memory!
 
@@ -96,3 +96,23 @@ While you can think of props as arguments you use to configure how components re
 ---
 
 # Handling Text Input
+
+介绍了 RN core component 的 `TextInput` 组件
+
+---
+
+# Using a ScrollView
+
+介绍了 ScrollView 组件,以及其在 Android iOS 平台的特点说明
+
+---
+
+# Using List Views
+
+介绍了 `latList` and `SectionList` 用法
+
+---
+
+# Troubleshooting
+
+--待学
