@@ -20,7 +20,7 @@
 
 
 `<LinearLayout … android:contentDescription="我是要朗读的内容" >`
-/
+
 
 `view.contentDescription ="我是要朗读的内容"`
 
@@ -60,4 +60,8 @@
     }
 })
 ```
+
+## 在 TalkBack 模式下如何滑动 View
+
+> 双指按住滑动
 
