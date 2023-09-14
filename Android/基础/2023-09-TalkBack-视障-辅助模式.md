@@ -65,3 +65,13 @@
 
 > 双指按住滑动
 
+## +0.67% 播报错误
+
+> 在 pixcel3 上, 当遇到 + 的百分比时会播报错误. 但是 -0.67% 增能正常播报,不带符号也可正常播报. 需要自己处理下. 示意代码
+
+```
+ if (text.startsWith("+")){
+    tvTest.contentDescription = "正${text.subSequence(1,text.length)}"
+}
+```
+
