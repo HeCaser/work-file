@@ -9,4 +9,3 @@ function readOnly() {
     const names: readonly string[] = ["9"]
     names.push('0')  // readonly 不可以修改
 }
-
