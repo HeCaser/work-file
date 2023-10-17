@@ -55,3 +55,12 @@ class Car {
   }
   // No error?
   let w: Car = new Golfer();
+
+
+
+function dateFun(date:Date){
+
+}
+
+// 报错,因为 JS Date() 作为 string 返回. 传入 new Date() 解决
+dateFun(Date())
