@@ -9,7 +9,7 @@ TS 与 JS 最大的区别就是 TS 就有 类型 (Type)
 
 Demo Code
 
-```
+```ts
 interface Pointlike {
   x: number;
   y: number;
@@ -51,7 +51,7 @@ TS 的 Type 是结构化的,而不是标称的. 判断对象是否符合某个 T
 ## Identical Types
 > 恒等性, 等价性. 
 
-```
+```ts
 class Car {
     drive() {
       // hit the gas
@@ -67,4 +67,3 @@ class Car {
 ```
 
 总结: 因为 `Car` 与 `Golfer` 定义的结构相同, 所以 `let w: Car = new Golfer();` 是正确的.
-
