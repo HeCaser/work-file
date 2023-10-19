@@ -60,3 +60,22 @@ const fish = {
 if("swim" in animal) // true
 
 ```
+
+
+## instanceof
+
+instanceof 可以判断对象类型
+
+```ts
+ let d = new Date() // 注意必须是 new Date()
+ d instanceof Date  // true
+```
+
+## The never type
+
+When narrowing, you can reduce the options of a union to a point where you have removed all possibilities and have nothing left. In those cases, TypeScript will use a never type to represent a state which shouldn’t exist.
+
+The never type is assignable to every type; however, no type is assignable to never (except never itself). This means you can use narrowing and rely on never turning up to do exhaustive checking in a switch statement.
+
+> 只有 never 类型可以赋值给 never 类型
+
