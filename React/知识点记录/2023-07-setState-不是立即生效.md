@@ -1,6 +1,6 @@
 ## Q: setState 不是立即 '生效'
 当使用 setState 改变对象值时，在后面紧接着使用该对象，其值并不是前面设置的
-```
+```ts
   const [isAddWeChat, setIsAddWeChat] = useState(true)
   
   if (result && result.code === 0) {

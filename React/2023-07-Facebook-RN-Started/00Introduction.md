@@ -61,7 +61,7 @@ JS 代码放置在 {} 中执行,包括 function 调用
 
 是 `properties` 的缩写, 通过传参实现 component 自定义能力, RN 的大部分核心组件都定义了参数传递, 例如 Image 传递 source
 
-```
+```ts
 const Cat = (props: CatProps) => {
   return (
     <View>
