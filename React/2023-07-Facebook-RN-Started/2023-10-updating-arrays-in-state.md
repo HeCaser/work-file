@@ -143,3 +143,9 @@ Recap
 - You can use filter() and map() to create new arrays with filtered or transformed items.
 - You can use Immer to keep your code concise. (三方库 `import { useImmer } from 'use-immer';`)
 
+- 可以把 array 设置给 state, 但是不能改变他们
+- 避免直接修改 array, 应该创建新的 array 并赋值给 state
+- 可以利用 [...arr, newItem] 为 array 添加新元素
+- 可以利用 filter 筛选(删除) 元素
+- 可以利用 map 改变数组内容
+  
