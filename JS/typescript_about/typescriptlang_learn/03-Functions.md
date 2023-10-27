@@ -107,4 +107,73 @@ const parsed = map(["1", "2", "3"], (n) => parseInt(n));
 
 ```
 
+## Function Overloads (方法重载)
+
+总结: 知道重载的写法和基本特性即可, 开发中少用
+
+```ts
+   // 重载函数, 下面写法只会重载入参为 1个 或者 3个的
+  function makeDate(timestamp: number): Date;
+  function makeDate(m: number, d: number, y: number): Date;
+  function makeDate(mOrTimestamp: number, d?: number, y?: number): Date {
+    if (d !== undefined && y !== undefined) {
+      return new Date(y, mOrTimestamp, d);
+    } else {
+      return new Date(mOrTimestamp);
+    }
+  }
+
+
+ const d1 = makeDate(12345678);
+ const d2 = makeDate(5, 5, 5);
+ const d3 = makeDate(1, 3); // error
+
+```
+
+
+## object 类型
+
+`object` 代表除去 `(string, number, bigint, boolean, symbol, null, or undefined)` 之外的所有类型.
+
+```ts
+  const testParam = (param: object) => {
+     console.log(`param is ${JSON.stringify(param)}`)
+  }
+
+  testParam([0,0])   // [0,0]
+  testParam({name:"hepan"}) // {"name":"hepan"}
+
+  testParam("字符串") // error string not object
+
+```
+
+## Rest Parameters (剩余参数)
+
+结论: 利用 `...` 和 `T[]` 设置剩余参数
+
+```ts
+const testParam = (n: number,...m:number[]) => {
+      console.log(`param is ${m.constructor.toString()} `) // m is array
+  }
+
+// 使用方式(注意入参不是 [])
+testParam(0,1,2,3) 
+```
+
+## Parameter Destructuring (解构参数)
+
+```ts
+function sum({ a, b, c }) {
+  console.log(a + b + c);
+}
+sum({ a: 10, b: 3, c: 9 });
+
+
+// 复杂的数据可以通过 type 定义
+
+type ABC = { a: number; b: number; c: number };
+function sum({ a, b, c }: ABC) {
+  console.log(a + b + c);
+}
+```
 
