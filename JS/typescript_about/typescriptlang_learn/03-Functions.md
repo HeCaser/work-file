@@ -53,7 +53,7 @@ const parsed = map(["1", "2", "3"], (n) => parseInt(n));
 ```
 
 进一步: 规定返回类型为 `Type`
-注意: 方法默认返回类型是 `Type`, 但返回 `{length:9}` 这样的数据是错误的, 必须与入参类型一致
+注意: 方法要求返回类型是 `Type`, 但返回 `{length:9}` 这样的数据是错误的, 必须与入参类型一致
 
 ```ts
   const getBigLength = <Type extends { length: number }>(a: Type, b: Type): Type => {
