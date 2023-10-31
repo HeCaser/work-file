@@ -118,3 +118,74 @@ let p: SquareConfig = { opacity: 0.5, width: 100 } as SquareConfig
 ```
 
 ## Extending Types (扩展类型)
+
+结论: 可以通过 `extends` 关键字扩展类型
+
+```ts
+ interface Person {
+    name: string,
+    age: number
+  }
+
+  interface Man extends Person {
+    param: number
+  }
+
+```
+
+结论: `extends` 可以多扩展:  `A extends B, C`
+
+```ts
+interface Colorful {
+  color: string;
+}
+ 
+interface Circle {
+  radius: number;
+}
+ 
+interface ColorfulCircle extends Colorful, Circle {}
+ 
+const cc: ColorfulCircle = {
+  color: "red",
+  radius: 42,
+};
+```
+
+## Intersection Types (交叉类型)
+
+结论: 通过 `&` 操作符实现类型交叉
+
+```ts
+  interface Colorful {
+    color: string;
+  }
+  interface Circle {
+    radius: number;
+  }
+   
+  type ColorfulCircle = Colorful & Circle;
+
+  let p: ColorfulCircle = {
+      color: 'red',
+      radius: 10
+    }
+```
+
+## Generic Object Types (泛型类型)
+
+总结: 可以定义具有泛型的类型
+
+```ts
+  // 一个具备 content 字段的结构, 字段类型为 Type(占位,具体由使用时传入)
+  interface Box<Type> {
+    content: Type;
+  }
+
+ let stringBox: Box<string> = {
+    content: "---"
+ }
+ let numberBox: Box<number> = {
+    content: 100
+ }
+```
