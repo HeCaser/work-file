@@ -29,7 +29,7 @@ alert(output);
 
 - 格式化
 
-```
+```ts
 static formatMills(mills: number, format: string): string {
     if (!mills || !format) {
       return ''
