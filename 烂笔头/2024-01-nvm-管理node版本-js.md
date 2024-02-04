@@ -1,6 +1,7 @@
+
 在进行大前端开发时, 会用到各种 packages. 有些 package 要求使用特定版本的 node, nvm 是进行 node 版本切换的工具
 
-[nvm 官网地址](https://github.com/nvm-sh/nvm)
+[nvm 官网地址](https://github.com/nvm-sh/nvm) : 管理 node 版本
 
 查看 node 版本 `node -v`
 
