@@ -78,4 +78,7 @@ export HDC_SERVER_PORT
   ```
   ` bundle-harmony` 命令依赖于第二步配置的工具
 
-  
+---
+2023-03-15
+
+后续调试,拆包等在 [RN 项目地址](https://github.com/HeCaser/RNForHarmony) 记录, 此文档不再更新
