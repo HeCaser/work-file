@@ -9,7 +9,7 @@
         final int len = length();
         if (h == 0 && len > 0) {
             for (int i = 0; i < len; i++) {
-                // 新值 = 前值 * 31 + 当前字符 assic 值
+                // 新值 = 前值 * 31 + 当前字符 ascii 值
                 h = 31 * h + charAt(i);
             }
         }
