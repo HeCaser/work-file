@@ -1,0 +1,49 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>WebSocket Client</title>  
+</head>  
+<body>  
+  
+<button id="sendButton">Send Message</button>  
+  
+<script>  
+    const ws = new WebSocket('ws://localhost:8080');  
+  
+    ws.onopen = function(event) {  
+        console.log('Connected to WebSocket server.');  
+    };  
+  
+    ws.onmessage = function(event) {  
+        console.log('Received message from server:', event.data);  
+    };  
+  
+    ws.onerror = function(error) {  
+        console.error('WebSocket Error:', error);  
+    };  
+  
+    ws.onclose = function(event) {  
+        if (event.wasClean) {  
+            console.log('Connection closed cleanly, code:', event.code, 'reason:', event.reason);  
+        } else {  
+            console.error('Connection died');  
+        }  
+    };  
+  
+    // 获取按钮元素并为其添加点击事件监听器  
+    document.getElementById('sendButton').addEventListener('click', function() {  
+        // 这里可以添加一些逻辑来获取要发送的消息，例如从输入框中读取  
+        const message = 'Hello from the button! time is '+ new Date().getTime();  
+        if (ws.readyState === WebSocket.OPEN) {  
+            ws.send(message);  
+            console.log('Message sent:', message);  
+        } else {  
+            console.error('WebSocket is not open. Unable to send message.');  
+        }  
+    });  
+</script>  
+  
+</body>  
+</html>
