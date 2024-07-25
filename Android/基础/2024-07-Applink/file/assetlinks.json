@@ -1,0 +1,50 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.xueqiu.android",
+            "sha256_cert_fingerprints": [
+                "71:71:D5:62:03:37:85:BC:98:98:9C:0C:D0:EC:91:6C:40:50:FB:68:00:53:8D:8F:36:4A:95:9F:22:3D:45:6B"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.xueqiu.android",
+            "sha256_cert_fingerprints": [
+                "02:D5:A4:A2:07:0C:F4:21:5C:CD:A1:38:52:1D:CB:EF:16:69:02:D8:2F:D5:8E:B2:5F:83:FD:AD:89:23:2D:90"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.xueqiu.fund",
+            "sha256_cert_fingerprints": [
+                "0C:EE:01:60:D6:0E:8E:E4:95:49:06:6E:5C:56:E8:95:8F:B3:21:EB:E2:71:FB:62:12:F0:8E:68:B2:B7:A5:64"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.xueqiu.android",
+            "sha256_cert_fingerprints": [
+                "41:4A:11:40:91:F9:57:F4:5F:6D:BA:16:38:34:28:80:DB:81:A4:FA:6E:27:3F:7C:C4:FC:DE:76:9E:2A:97:B1"
+            ]
+        }
+    }
+]
