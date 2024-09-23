@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChangeLayoutTestActivity">
+
+    <TextView
+        android:id="@+id/tvTest1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="改变位置"
+        android:textFontWeight="100"
+        app:layout_constraintTop_toBottomOf="@+id/tvTest" />
+
+    <TextView
+        android:id="@+id/tvTest2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="还原"
+        android:textFontWeight="100"
+        app:layout_constraintTop_toBottomOf="@+id/tvTest" />
+
+    <com.example.xqtest.view.FixItemLinearLayout
+        android:id="@+id/llFixView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="@color/color_937700"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <TextView
+            android:background="@color/colorAccent"
+            android:tag="fix"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <TextView
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+    </com.example.xqtest.view.FixItemLinearLayout>
+</LinearLayout>

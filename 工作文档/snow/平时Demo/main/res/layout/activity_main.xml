@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <com.xueqiu.android.commonui.design.views.DesignTextView
+            android:id="@+id/tvTest"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:gravity="center"
+            android:text="test"
+            android:textFontWeight="100"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTest2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="test2"
+            android:textFontWeight="100"
+            app:layout_constraintTop_toBottomOf="@+id/tvTest" />
+
+        <LinearLayout
+            android:id="@+id/llContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tvTest2">
+
+            <ImageView
+                android:id="@+id/ivTest"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zhuzhang_day"
+                app:tint="@color/black" />
+
+            <ImageView
+                android:id="@+id/ivTest2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_l_feeds_zhuzhang_day"
+                app:tint="@color/black" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+            <include layout="@layout/nesting_portfolio_table_head_first_column"></include>
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:background="@color/color_937700" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="46dp"
+                android:layout_height="14dp"
+                android:gravity="center"
+                android:text="+1093.99%"
+                app:autoSizeMaxTextSize="10dp"
+                app:autoSizeMinTextSize="2dp"
+                app:autoSizeStepGranularity="1dp"
+                app:autoSizeTextType="uniform" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="46dp"
+                android:layout_height="14dp"
+                android:gravity="center"
+                android:text="-1093.99%"
+                app:autoSizeMaxTextSize="10dp"
+                app:autoSizeMinTextSize="2dp"
+                app:autoSizeStepGranularity="1dp"
+                app:autoSizeTextType="uniform" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <!--背景, 可以控制 ProgressBar 从右到左 进度-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="5dip" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <scale
+            android:scaleWidth="100%"
+            android:scaleGravity="right">
+            <shape>
+                <corners android:radius="5dip" />
+                <solid android:color="@color/colorAccent" />
+            </shape>
+        </scale>
+    </item>
+</layer-list>

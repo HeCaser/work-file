@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bugfix.FundDetailScrollViewBugActivity">
+
+    <com.example.xqtest.scrollview.SNBObservableNestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <View
+                android:id="@+id/view1"
+                android:background="#f00"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tvChange"
+                    android:text="切换"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"></TextView>
+                <View
+                    android:visibility="gone"
+                    android:id="@+id/viewInner"
+                    android:background="#f0f"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+                 <!--令其每一行都是横线滑动的 Rv-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:background="#434"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <View
+                android:id="@+id/view3"
+                android:background="#fd0"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <View
+                android:id="@+id/view4"
+                android:background="#f0f"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+        </LinearLayout>
+    </com.example.xqtest.scrollview.SNBObservableNestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

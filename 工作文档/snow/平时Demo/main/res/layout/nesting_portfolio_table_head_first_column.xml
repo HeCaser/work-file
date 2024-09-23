@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp"
+    android:gravity="right|center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="6dp">
+
+    <ImageView
+        android:id="@+id/portfolio_turn_to_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingHorizontal="6dp"
+        android:src="@drawable/icon_portfolio_turn_to_full_screen"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/portfolio_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingHorizontal="6dp"
+        android:src="@drawable/icon_portfolio_setting" />
+
+
+    <!--基金以及自定义基金分组 pk-->
+    <ImageView
+        android:id="@+id/portfolio_fund_pk"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingHorizontal="6dp"
+        android:visibility="visible"
+        android:src="@drawable/icon_m_contrast_night"
+        />
+
+
+
+
+    <ImageView
+        android:id="@+id/portfolio_time_chart_mode_hint"
+        android:layout_width="4dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/color_937700"
+        tools:ignore="UseAppTint" />
+
+
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:gravity="right|center_vertical">
+
+        <TextView
+            android:id="@+id/stock_title"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:autoSizeMinTextSize="12dp"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical|left"
+            android:maxLines="1"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/restore_default"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="恢复"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>

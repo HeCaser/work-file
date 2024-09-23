@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple H5 Page with JSON Function</title>
+    <script type="text/javascript">
+        function getJsonData() {
+            var jsonData = {
+                "name": "Tony",
+                "age": 30,
+                "email": "johndoe@example.com"
+            };
+            return JSON.stringify(jsonData);
+        }
+
+           function getJsonData2(callback) {
+            setTimeout(function() {
+                var jsonData = {
+                    "name": "Pp",
+                    "age": 30,
+                    "email": "johndoe@example.com"
+                };
+                callback(JSON.stringify(jsonData));
+            }, 3000); // 延时3秒
+        }
+
+    </script>
+</head>
+<body>
+<h1>Simple H5 Page with JSON Function1</h1>
+<p>This page exposes a JavaScript function that returns a JSON object.</p>
+<script type="text/javascript">
+        // This script block is optional and is only used for demonstration purposes.
+        // It shows how to call the getJsonData function and display its result.
+
+
+
+</script>
+<!-- <pre id="jsonOutput"></pre> -->
+<!-- Optional: Uncomment this line if you want to display the JSON string on the page. -->
+</body>
+</html>

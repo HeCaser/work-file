@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scrollview.ScrollViewTextViewActivity">
+
+
+    <com.example.xqtest.scrollview.SNBObservableNestedScrollView
+        android:id="@+id/scrollViewTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.xqtest.scrollview.ItemScrollTextView
+                android:id="@+id/tvText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:tag="我是标题头"
+                android:text="我是标题头" />
+
+
+            <com.example.xqtest.scrollview.ItemScrollTextView
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:tag="1"
+                android:text="1" />
+
+            <com.example.xqtest.scrollview.ItemScrollTextView
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:tag="2"
+                android:text="2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                android:paddingTop="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.example.xqtest.scrollview.ItemScrollTextView
+                        android:id="@+id/view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorAccent"
+                        android:gravity="center"
+                        android:tag="3"
+                        android:text="3" />
+
+                    <com.example.xqtest.scrollview.ItemScrollTextView
+                        android:id="@+id/view4"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorAccent"
+                        android:gravity="center"
+                        android:tag="4"
+                        android:text="4" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.example.xqtest.scrollview.SNBObservableNestedScrollView>
+
+    <TextView
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/tvAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="adfaad阿道夫阿道夫ad"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

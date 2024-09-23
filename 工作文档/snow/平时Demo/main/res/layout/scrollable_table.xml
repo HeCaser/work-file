@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_table_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header_row"
+        layout="@layout/scrollable_table_row"/>
+
+    <View
+        android:background="@color/teal_200"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></View>
+
+    <com.example.xqtest.scrollabletable.STCellRecyclerView
+        android:id="@+id/content_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>

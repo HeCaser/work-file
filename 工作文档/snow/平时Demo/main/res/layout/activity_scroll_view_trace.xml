@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlEnableAutoLoadMore="true"
+    app:srlEnableLoadMore="false"
+    app:srlEnableNestedScrolling="true">
+
+    <com.scwang.smart.refresh.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+         <!--ScrollView 高度会和父控件一样-->
+        <com.example.xqtest.scrollview.SNBObservableNestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+             <!--LinearLayout 的高度实际会变为 wrapcontent-->
+            <LinearLayout
+                android:id="@+id/llContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.example.xqtest.scrollview.ItemScrollTextView
+                    android:id="@+id/tvText"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:tag="我是标题头"
+                    android:text="我是标题头" />
+
+
+                <com.example.xqtest.scrollview.ItemScrollTextView
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:tag="1"
+                    android:text="1" />
+
+                <com.example.xqtest.scrollview.ItemScrollTextView
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:tag="2"
+                    android:text="2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:orientation="vertical"
+                    android:paddingTop="50dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.example.xqtest.scrollview.ItemScrollTextView
+                            android:id="@+id/view3"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorAccent"
+                            android:gravity="center"
+                            android:tag="3"
+                            android:text="3" />
+
+                        <com.example.xqtest.scrollview.ItemScrollTextView
+                            android:id="@+id/view4"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorAccent"
+                            android:gravity="center"
+                            android:tag="4"
+                            android:text="4" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </com.example.xqtest.scrollview.SNBObservableNestedScrollView>
+
+    </FrameLayout>
+</com.scwang.smart.refresh.layout.SmartRefreshLayout>

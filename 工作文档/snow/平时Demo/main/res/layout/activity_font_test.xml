@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.FontTestActivity">
+
+    <TextView
+        android:id="@+id/tvDefault"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="连续 40 季度正收益 no font" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="otf din 设置字体" />
+
+    <TextView
+        android:id="@+id/tvRegular"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="连续 40 季度正收益 regular" />
+
+    <TextView
+        android:id="@+id/tvMedium"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="连续 40 季度正收益 medium" />
+
+    <TextView
+        android:id="@+id/tvBold"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="连续 40 季度正收益 bold" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="otf din 字体(部分)" />
+
+    <TextView
+        android:id="@+id/tvRegular2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="连续 40 季度正收益 regular" />
+
+    <TextView
+        android:id="@+id/tvMedium2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="连续 40 季度正收益 medium" />
+
+    <TextView
+        android:id="@+id/tvBold2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="连续 40 季度正收益 bold" />
+</LinearLayout>
