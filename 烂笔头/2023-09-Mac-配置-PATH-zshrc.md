@@ -18,7 +18,7 @@ export JAVA_8_HOME="$(/usr/libexec/java_home -v 1.8)"
 export JAVA_11_HOME="$(/usr/libexec/java_home -v 11)"
 alias jdk8='export JAVA_HOME=$JAVA_8_HOME'
 alias jdk11='export JAVA_HOME=$JAVA_11_HOME'
-export JAVA_HOME=$JAVA_8_HOME$
+export JAVA_HOME=$JAVA_8_HOME
 ~                                       
 ```
 
