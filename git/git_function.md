@@ -1,7 +1,9 @@
 # 记录 git 使用问题 OR 知识点
 
 # git alias
-> 别名,有助于快速输入 git 命令: git config --global alias.st status
+> 别名,有助于快速输入 git 命令: 
+git config --global alias.st status
+git config --global alias.pl pull
 ```
 // 常用配置
 alias.co=checkout

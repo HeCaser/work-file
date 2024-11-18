@@ -26,3 +26,4 @@ export JAVA_HOME=$JAVA_8_HOME
 
 在控制台输入 `jdk8` 则可以在当前目录下切换 jdk 版本.
 
+补充： 通过命令 `/usr/libexec/java_home -V` 可以查看当前安装的所有 JDK 版本。
