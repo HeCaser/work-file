@@ -4,4 +4,4 @@
 解决:
 通过 VS 左侧的按钮 Run And Debug 运行 App 可以实现 hot reload
 
-![alt text](../烂笔头/img/04-hot-reload.png)
+![image](img/01-hot-reload.png)
