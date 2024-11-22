@@ -21,7 +21,7 @@ alias.cp=cherry-pick
 步骤
 -  创建 workfile, 指定一个不存在的分支
 
-    `git worktree add ../new-dir (可选项:拉取指定分支)`
+    `git worktree add ../new-dir  master (可选项:拉取指定分支)`
 
 - IDE 打开新项目 new-dir
 - 切换为正常分支(和已开项目分支不同)
