@@ -63,3 +63,10 @@ alias.cp=cherry-pick
  4. 冲突
 
  如果在 `cherry-pick` 过程中遇到冲突，Git 会暂停并让你解决冲突。解决冲突后，你需要运行 `git cherry-pick --continue` 来继续 `cherry-pick` 过程。如果你决定放弃 `cherry-pick`，可以使用 `git cherry-pick --abort` 来撤销
+
+
+ # git 移除某个已经跟踪的文件
+
+ - git rm -r --cached ./plugins/ve_vod-1.46.31/android/.gradle/*
+ - 添加 gitignore 规则
+ - 最后，提交这次更改（即提交移除跟踪的操作）。
